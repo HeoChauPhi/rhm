@@ -60,15 +60,16 @@ if ( file_exists( __DIR__ . '/wp-content/vendor/autoload.php')) {
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'DboWs?|TfFpUe,[eJg|1ePqVAL7Eo2Q(|v7(MO9bj1+`XsT=_E>C5+C`%2Efl;]7');
-define('SECURE_AUTH_KEY',  '~l6pr*U`zvPDQSH*=U^)R<atm/eE6,I!]ghMYK&JQoFZ[Y,v=[x*z@KAi9wV^;Vj');
-define('LOGGED_IN_KEY',    '[Nu3=4D@&^27VmhnM(5!:pr<}fEb(n5_kb?g2Yg(wfT[0R9f]8K+2:se.YULnY|T');
-define('NONCE_KEY',        '[Hy6rh)/6>m3 SrxnI V~~}xuk`>0@`F66vvLZbta{^2z?Lm}5+x(Zb|{7?s<=,K');
-define('AUTH_SALT',        'ukVK$h0zYsrp+Y|UkK4 .Bw}1A0Z~5sxK|8Dq+q&8Q>/<,s-2PpoF:C/6I[m3(aF');
-define('SECURE_AUTH_SALT', 'nVLTt2$c;z`S{]kC^,H%5x>coo4Zzxd9f,,/a>nXEk=VP0h SbJzDsj,/)f{Ul9 ');
-define('LOGGED_IN_SALT',   'CudY*3S$izsSX$?THT.S*?o!,_#~an|b0*G[|=T4-G:d9Je6-tG1W0vl5v%c}#z3');
-define('NONCE_SALT',       '$C_c24`l3- a)))IL]ooN1pb<y--<*f}]z!D,F>s76afYe&VI b)8qeIr^+.YgY#');
-
+if (!isset($_SERVER['PANTHEON_ENVIRONMENT'])) {
+  define('AUTH_KEY',         'DboWs?|TfFpUe,[eJg|1ePqVAL7Eo2Q(|v7(MO9bj1+`XsT=_E>C5+C`%2Efl;]7');
+  define('SECURE_AUTH_KEY',  '~l6pr*U`zvPDQSH*=U^)R<atm/eE6,I!]ghMYK&JQoFZ[Y,v=[x*z@KAi9wV^;Vj');
+  define('LOGGED_IN_KEY',    '[Nu3=4D@&^27VmhnM(5!:pr<}fEb(n5_kb?g2Yg(wfT[0R9f]8K+2:se.YULnY|T');
+  define('NONCE_KEY',        '[Hy6rh)/6>m3 SrxnI V~~}xuk`>0@`F66vvLZbta{^2z?Lm}5+x(Zb|{7?s<=,K');
+  define('AUTH_SALT',        'ukVK$h0zYsrp+Y|UkK4 .Bw}1A0Z~5sxK|8Dq+q&8Q>/<,s-2PpoF:C/6I[m3(aF');
+  define('SECURE_AUTH_SALT', 'nVLTt2$c;z`S{]kC^,H%5x>coo4Zzxd9f,,/a>nXEk=VP0h SbJzDsj,/)f{Ul9 ');
+  define('LOGGED_IN_SALT',   'CudY*3S$izsSX$?THT.S*?o!,_#~an|b0*G[|=T4-G:d9Je6-tG1W0vl5v%c}#z3');
+  define('NONCE_SALT',       '$C_c24`l3- a)))IL]ooN1pb<y--<*f}]z!D,F>s76afYe&VI b)8qeIr^+.YgY#');
+}
 /**#@-*/
 
 /**
