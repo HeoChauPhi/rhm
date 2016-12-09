@@ -19,10 +19,11 @@ else
 fi
 
 echo -e "\n${txtgrn}Applying new changes to Pantheon repo ${txtrst}"
-rsync -a --delete "build/" "rhm-site/" --exclude .git --exclude .gitignore --exclude .env --exclude uploads
+cd ..
+rsync -a --delete "build/" "pantheon-site/rhm-site/" --exclude .git --exclude .gitignore --exclude .env --exclude uploads --exclude wp-config.local.php --exclude *.sass-cache
 
 # Move into the pantheon repo to apply changes.
-cd rhm-site
+cd pantheon-site/rhm-site
 git add -A
 git commit -m"$COMMIT_MESSAGE"
 
