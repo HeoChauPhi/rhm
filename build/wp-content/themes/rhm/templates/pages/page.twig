@@ -14,6 +14,7 @@
       <h3 class="post-title"><a href="{{ post.link }}">{{ post.title }}</a></h3>
     {% endif %}
     {{  post.post_content|shortcodes }}
+    {{ flexible_content('group_component') }}
     {{ flexible_content('view_component') }}
   {% endfor %}
 

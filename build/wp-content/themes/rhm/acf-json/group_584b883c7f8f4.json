@@ -1,0 +1,125 @@
+{
+    "key": "group_584b883c7f8f4",
+    "title": "Group Specializeds Fields",
+    "fields": [
+        {
+            "layouts": [
+                {
+                    "key": "584b88d63c433",
+                    "name": "specializeds_images",
+                    "label": "Specializeds Images",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "layouts": [
+                                {
+                                    "key": "584b891a4eb1a",
+                                    "name": "image_fields",
+                                    "label": "Image Fields",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "return_format": "array",
+                                            "preview_size": "full",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": "",
+                                            "key": "field_584b89251f2e0",
+                                            "label": "Image Field",
+                                            "name": "image_field",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        },
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "key": "field_584b89421f2e1",
+                                            "label": "Image Label",
+                                            "name": "image_label",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": 3,
+                            "button_label": "Add Images",
+                            "key": "field_584b88ef1f2df",
+                            "label": "List Images",
+                            "name": "list_images",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ],
+            "min": "",
+            "max": "",
+            "button_label": "Add Specializeds Fields",
+            "key": "field_584b88b81f2de",
+            "label": "Specializeds Fields",
+            "name": "specializeds_fields",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "specialized"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1481346093
+}
