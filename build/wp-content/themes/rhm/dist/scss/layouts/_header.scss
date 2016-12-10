@@ -1,2 +1,41 @@
 .header {
+  &__top {
+    background-color: $green;
+    font-size: 20px;
+    color: $white;
+    text-align: right;
+    padding: 10px 0;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__site-logo {
+    line-height: 0;
+  }
+
+  &__bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.box-social {
+  a {
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
+
+  a:before {
+    color: #333;
+    float: left;
+    font-size: 18px;
+    line-height: 16px;
+    margin: 0;
+    text-indent: 0;
+  }
 }

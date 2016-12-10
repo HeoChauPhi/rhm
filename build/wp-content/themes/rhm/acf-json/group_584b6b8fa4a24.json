@@ -1,0 +1,72 @@
+{
+    "key": "group_584b6b8fa4a24",
+    "title": "Hotline",
+    "fields": [
+        {
+            "layouts": [
+                {
+                    "key": "584b79d21e953",
+                    "name": "hotline_bs",
+                    "label": "Hotline BS",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "default_value": "",
+                            "new_lines": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "rows": 4,
+                            "key": "field_584b79ef828c2",
+                            "label": "hotline format text",
+                            "name": "hotline_format_text",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ],
+            "min": "",
+            "max": "",
+            "button_label": "Add Row",
+            "key": "field_584b6bc650327",
+            "label": "Hotline Header Top",
+            "name": "group_header_top",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "header_widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1481341501
+}

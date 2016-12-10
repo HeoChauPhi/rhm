@@ -11,11 +11,16 @@ $silver: silver;
 $gray-fb: #fbfbfb;
 $gray-f4: #f4f4f4;
 $gray-c2: #c2c2c2;
+$gray-66: #666;
+$gray-33: #333;
 
+// green
+$green: #74a440;
+$green-light: #e2ffd5;
 
 // Base colors
-$primary-color: $black;
-$text-color: $primary-color;
+$primary-color: $green;
+$text-color: $gray-66;
 $border-color: $primary-color;
-$link-color: inherit;
+$link-color: $green;
 

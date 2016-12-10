@@ -92,7 +92,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 define('FS_METHOD', 'direct');
 
 /* That's all, stop editing! Happy blogging. */

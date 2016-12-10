@@ -23,4 +23,5 @@ body {
   // Disable in production mode;
   // @include show-breakpoints;
   text-size-adjust: none;
+  @include arial;
 }
