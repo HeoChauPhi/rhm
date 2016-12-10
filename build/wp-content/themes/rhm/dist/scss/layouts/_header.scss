@@ -1,4 +1,5 @@
 .header {
+
   &__top {
     background-color: $green;
     font-size: 20px;
@@ -22,20 +23,64 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .site-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height: 1;
+    color: $link-color;
+  }
+
+  .site-description {
+    font-size: 12px;
+    font-style: italic;
+  }
 }
 .box-social {
+  &__item {
+    line-height: 0;
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+  }
+
   a {
-    display: inline-block;
+    display: flex;
     overflow: hidden;
     text-indent: -9999px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 200px;
+    justify-content: center;
+    border: 1px solid $link-color;
+
+    &:hover {
+      background-color: $link-color;
+      &:before {
+        color: $white;
+      }
+    }
   }
 
   a:before {
-    color: #333;
+    color: $link-color;
     float: left;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 16px;
     margin: 0;
     text-indent: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    margin-top: 15px;
   }
 }

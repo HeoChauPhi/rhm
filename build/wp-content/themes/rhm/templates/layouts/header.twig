@@ -26,9 +26,13 @@
           {{acfwidget('group_footer', 'footer_widget-8')}}
         </div>
       </div>
-      {% block navigation %}
-      {% include 'navigation.twig' %}
-      {% endblock %}
+    </div>
+    <div class="nav-wrapper">
+      <div class="container-wide">
+        {% block navigation %}
+         {% include 'navigation.twig' %}
+        {% endblock %}
+      </div>
     </div>
   </header>
 {% endblock %}

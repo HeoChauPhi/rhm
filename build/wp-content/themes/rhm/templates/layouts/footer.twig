@@ -2,12 +2,15 @@
   <footer id="footer" class="footer">
     <div class="footer__top">
       <div class="container-wide">
-        <div class="box-menu">
-          <h2>Bài viết nên xem</h2>
-          {% include 'footer-menu.twig' %}
+        <div class="footer__top-group">
+          <div class="box-menu">
+            <h2>Bài viết nên xem</h2>
+            {% include 'footer-menu.twig' %}
+          </div>
+          <div class="box-lienhe">
+          {{acfwidget('group_footer', 'footer_widget-7')}}
+          </div>
         </div>
-
-        {{acfwidget('group_footer', 'footer_widget-7')}}
       </div>
     </div>
     <div class="footer__bottom">
