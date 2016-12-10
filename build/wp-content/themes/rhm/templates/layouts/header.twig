@@ -1,19 +1,38 @@
 {% block header %}
-  <header id="header" class="header clearfix bg--gradient-red">
-    <div class="container-wide">
-      <div class="header__logo">
-        {% if function('has_custom_logo') %}
-          {{function('the_custom_logo')}}
-        {% else %}
-          <a href="{{ site.url }}">
-            <img alt="{{ site.name }}" class="site-logo" src="{{ site_logo }}" alt="{{ site.name }}">
-          </a>
-        {% endif %}
+  <header id="header" class="header clearfix">
+    <div class="header__top">
+      <div class="container-wide container">
+        {{acfwidget('group_header_top', 'header_widget-2')}}
       </div>
-
-      {% block navigation %}
-      {% include 'navigation.twig' %}
-      {% endblock %}
+    </div>
+    <div class="container-wide">
+      <div class="header__bottom">
+        <div class="header__logo">
+          <div class="header__site-logo">
+            {% if function('has_custom_logo') %}
+              {{function('the_custom_logo')}}
+            {% else %}
+              <a href="{{ site.url }}">
+                <img alt="{{ site.name }}" class="site-logo" src="{{ site_logo }}" alt="{{ site.name }}">
+              </a>
+            {% endif %}
+          </div>
+          <div class="heade__site-group">
+            <div class="site-name">{{site.name}}</div>
+            <div class="site-description">{{site.description}}</div>
+          </div>
+        </div>
+        <div class="header__social">
+          {{acfwidget('group_footer', 'footer_widget-8')}}
+        </div>
+      </div>
+    </div>
+    <div class="nav-wrapper">
+      <div class="container-wide">
+        {% block navigation %}
+         {% include 'navigation.twig' %}
+        {% endblock %}
+      </div>
     </div>
   </header>
 {% endblock %}

@@ -1,6 +1,22 @@
 {% block footer %}
   <footer id="footer" class="footer">
-    {% include 'footer-menu.twig' %}
-    <div class="copyright">Copy right by HeoChauA</div>
+    <div class="footer__top">
+      <div class="container-wide">
+        <div class="footer__top-group">
+          <div class="box-menu">
+            <h2>Bài viết nên xem</h2>
+            {% include 'footer-menu.twig' %}
+          </div>
+          <div class="box-lienhe">
+          {{acfwidget('group_footer', 'footer_widget-7')}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container-wide">
+        <div class="copyright">Copy right by HeoChauA</div>
+      </div>
+    </div>
   </footer>
 {% endblock %}

@@ -1,0 +1,42 @@
+.nav-wrapper {
+    border-bottom: 1px solid #ccc;
+}
+.main-menu {
+  ul {
+    display: flex;
+    justify-content: flex-start;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+      a {
+        color: $gray-66;
+        padding: 10px 5px;
+        font-size: 14px;
+        font-weight: 700;
+        display: block;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+          color: $link-color;
+          border-bottom: 1px solid $link-color;
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+        a {
+          // padding-left: 0;
+        }
+      }
+
+      &.active {
+        a {
+          color: $link-color;
+          border-bottom: 1px solid $link-color;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

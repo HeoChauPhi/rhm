@@ -1,2 +1,81 @@
 .footer {
+  color: $white;
+  font-size: 13px;
+  h1,
+  h2,
+  h3 {
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  &__top {
+    background-color: $green;
+    padding: 40px 0 20px;
+
+    &-group {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__bottom {
+    background-color: $green-dark;
+    color: $white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  .box-social {
+    &__item {
+      a {
+        color: $white;
+        border: 1px solid $white;
+
+        &:before {
+          color: $white;
+        }
+
+        &:hover {
+          background-color: $white;
+
+          &:before {
+            color: $link-color;
+          }
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.box-menu {
+  li {
+    a {
+      padding: 5px 0;
+      display: block;
+
+      &:before {
+        content: "\e901";
+        font-family: 'icomoon' !important;
+        margin-right: 3px;
+      }
+    }
+  }
 }
