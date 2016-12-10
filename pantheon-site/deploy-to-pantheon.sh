@@ -12,7 +12,7 @@ if [ ! -d "rhm-site" ]
 then
 	# Clone the Pantheon repoa
 	echo -e "\n${txtgrn}Cloning Pantheon repository ${txtrst}"
-	git clone $PANTHEON_GIT_URL " rhm-site"
+	git clone $PANTHEON_GIT_URL "rhm-site"
 else
 	echo -e "\n${txtgrn}Pull latest from Pantheon ${txtrst}"
 	git -C "rhm-site" pull
