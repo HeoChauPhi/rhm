@@ -1,0 +1,6 @@
+<div class="box-{{ acf_fc_layout }}">
+  {% for item in feature_slider %}
+    <img src="{{ item.slider_image.url }}">
+    <div>{{ item.slider_description }}</div>
+  {% endfor %}
+</div>

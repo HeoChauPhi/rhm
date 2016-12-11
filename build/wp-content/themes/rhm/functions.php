@@ -16,6 +16,12 @@ require_once('init/options/option.php');
 if(!is_admin()) {
   // Add scripts
   function rhm_libs_scripts() {
+    wp_register_script('prettify', get_stylesheet_directory_uri() . '/dist/js/libs/prettify.js', array('jquery'), FALSE, '1.0.0', TRUE);
+    wp_enqueue_script('prettify');
+
+    wp_register_script('googlemap', get_stylesheet_directory_uri() . '/dist/js/libs/gmaps.js', array('jquery'), FALSE, '0.4.24', TRUE);
+    wp_enqueue_script('googlemap');
+
     wp_register_script('lib-slick', get_stylesheet_directory_uri() . '/dist/js/libs/slick.js', array('jquery'), FALSE, '0.7.0', TRUE);
     wp_enqueue_script('lib-slick');
 
@@ -52,6 +58,11 @@ function rhm_admin_scripts() {
   wp_enqueue_script('admin-script');
 }
 add_action('admin_init', 'rhm_admin_scripts');
+
+function rhm_script_admin_head() {
+  echo '<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBe7jwJlR9vwG5KN56gaKf6WCjCJaOPI1Y"></script>';
+}
+add_action( 'admin_head', 'rhm_script_admin_head' );
 
 // Add admin script
 function rhm_admin_styles() {

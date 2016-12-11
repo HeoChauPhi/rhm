@@ -1,5 +1,11 @@
 {% extends 'layout.twig' %}
 
+{% block feature %}
+  <div class="feature">
+    {{ flexible_content('feature_banner_fields') }}
+  </div>
+{% endblock %}
+
 {% block content %}
   {% if title_option != "on" %}
     {% if post.title %}

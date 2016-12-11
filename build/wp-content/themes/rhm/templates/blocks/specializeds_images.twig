@@ -1,0 +1,6 @@
+{% for item in list_images %}
+<div>
+  <img src="{{ item.image_field.url }}">
+  <div>{{ item.image_label }}</div>
+</div>
+{% endfor %}

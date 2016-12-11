@@ -67,14 +67,6 @@ function rhm_page_option_metaboxes() {
     'type'       => 'checkbox'
   ) );
 
-  // Disable title
-  $cmb->add_field( array(
-    'name'       => __( 'Main Content no Padding', 'cmb2' ),
-    'desc'       => __( 'Check it if you want remove padding of main-content on this page', 'cmb2' ),
-    'id'         => $prefix . 'no_padding',
-    'type'       => 'checkbox'
-  ) );
-
   // Layout Option
   $cmb->add_field( array(
     'name'              => __('Layout page option', 'cmb2'),
