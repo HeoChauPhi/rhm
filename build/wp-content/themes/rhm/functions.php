@@ -16,6 +16,12 @@ require_once('init/options/option.php');
 if(!is_admin()) {
   // Add scripts
   function rhm_libs_scripts() {
+    wp_register_script('prettify', get_stylesheet_directory_uri() . '/dist/js/libs/prettify.js', array('jquery'), FALSE, '1.0.0', TRUE);
+    wp_enqueue_script('prettify');
+
+    wp_register_script('googlemap', get_stylesheet_directory_uri() . '/dist/js/libs/gmaps.js', array('jquery'), FALSE, '0.4.24', TRUE);
+    wp_enqueue_script('googlemap');
+
     wp_register_script('lib-slick', get_stylesheet_directory_uri() . '/dist/js/libs/slick.js', array('jquery'), FALSE, '0.7.0', TRUE);
     wp_enqueue_script('lib-slick');
 
@@ -53,6 +59,11 @@ function rhm_admin_scripts() {
 }
 add_action('admin_init', 'rhm_admin_scripts');
 
+function rhm_script_admin_head() {
+  echo '<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBe7jwJlR9vwG5KN56gaKf6WCjCJaOPI1Y"></script>';
+}
+add_action( 'admin_head', 'rhm_script_admin_head' );
+
 // Add admin script
 function rhm_admin_styles() {
   wp_register_style('admin-style', get_stylesheet_directory_uri() . '/dist/css/admin.css', array(), '1.0', 'all');
@@ -60,32 +71,58 @@ function rhm_admin_styles() {
 }
 add_action('admin_init', 'rhm_admin_styles');
 
-/* Add custom post type
+/* Add custom post type */
 function rhm_create_custom_post_types() {
-  // Vacancies
-  register_post_type( 'vacancy', array(
+  // Member
+  register_post_type( 'member', array(
     'labels' => array(
-      'name' => __( 'Vacancies' ),
-      'singular_name' => __( 'Vacancy' )
+      'name' => __( 'Members', 'rhm_theme' ),
+      'singular_name' => __( 'Member', 'rhm_theme' )
     ),
     'public' => true,
     'has_archive' => false,
     'menu_position' => 20,
-    'rewrite' => array('slug' => 'vacancies'),
-    'supports' => array( 'title', 'editor' ),
+    'rewrite' => array('slug' => 'members'),
+    'supports' => array( 'title' ),
+  ));
+
+  // Specialized
+  register_post_type( 'specialized', array(
+    'labels' => array(
+      'name' => __( 'Specializeds', 'rhm_theme' ),
+      'singular_name' => __( 'Specialized', 'rhm_theme' )
+    ),
+    'public' => true,
+    'has_archive' => false,
+    'menu_position' => 22,
+    'rewrite' => array('slug' => 'specializeds'),
+    'supports' => array( 'title', 'editor'),
+  ));
+
+  // Schedule
+  register_post_type( 'schedule', array(
+    'labels' => array(
+      'name' => __( 'Schedules', 'rhm_theme' ),
+      'singular_name' => __( 'Schedule', 'rhm_theme' )
+    ),
+    'public' => true,
+    'has_archive' => false,
+    'menu_position' => 23,
+    'rewrite' => array('slug' => 'schedules'),
+    'supports' => array( 'title'),
   ));
 }
 add_action( 'init', 'rhm_create_custom_post_types' );
 
-
+/* Add custom Taxonomy */
 function rhm_create_custom_taxonomy() {
-  $labels_product = array(
-    'name' => 'Service',
-    'singular' => 'Service',
-    'menu_name' => 'Service'
+  $labels_specialized = array(
+    'name' => __('Specialized Areas', 'rhm_theme'),
+    'singular' => __('Specialized Areas', 'rhm_theme'),
+    'menu_name' => __('Specialized Areas', 'rhm_theme')
   );
-  $args_product = array(
-    'labels'                     => $labels_product,
+  $args_specialized = array(
+    'labels'                     => $labels_specialized,
     'hierarchical'               => true,
     'public'                     => true,
     'show_ui'                    => true,
@@ -93,6 +130,6 @@ function rhm_create_custom_taxonomy() {
     'show_in_nav_menus'          => true,
     'show_tagcloud'              => true,
   );
-  register_taxonomy('service_product', array('wf_product'), $args_product);
+  register_taxonomy('specialized_areas', array('specialized'), $args_specialized);
 }
-add_action( 'init', 'rhm_create_custom_taxonomy', 0 );*/
+add_action( 'init', 'rhm_create_custom_taxonomy', 0 );

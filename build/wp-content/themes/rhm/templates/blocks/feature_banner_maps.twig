@@ -1,0 +1,22 @@
+<div class="box-{{ acf_fc_layout }}">
+  <div class="google-maps" style="height: {{ banner_map_height }}px; width: {{ banner_map_width }}px;"></div>
+  <script type="text/javascript">
+    (function($) {
+      var map;
+      $(document).ready(function(){
+        prettyPrint();
+        map = new GMaps({
+          div: '.google-maps',
+          lat: {{ banner_maps.lat }},
+          lng: {{ banner_maps.lng }}
+        });
+        map.addMarker({
+          lat: {{ banner_maps.lat }},
+          lng: {{ banner_maps.lng }},
+          title: '{{ banner_maps.address }}'
+        });
+      });
+    })(jQuery);
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBe7jwJlR9vwG5KN56gaKf6WCjCJaOPI1Y"></script>
+</div>

@@ -1,5 +1,11 @@
 {% extends 'layout.twig' %}
 
+{% block feature %}
+  <div class="feature">
+    {{ flexible_content('feature_banner_fields') }}
+  </div>
+{% endblock %}
+
 {% block content %}
   {% for post in posts %}
     {% include ["single-"~post.post_name~".twig", "single-"~post.post_type~".twig", 'tease.twig'] %}

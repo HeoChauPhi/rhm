@@ -8,7 +8,7 @@ use Timber\Menu;
 require_once dirname( __FILE__ ) . '/theme-support.php';
 
 // Get custom function template with Timber
-Timber::$dirname = array('templates', 'templates/blocks', 'templates/shortcode', 'templates/pages', 'templates/layouts', 'templates/views');
+Timber::$dirname = array('templates', 'templates/blocks', 'templates/shortcode', 'templates/pages', 'templates/layouts', 'templates/elements');
 
 // Disable Related post
 function related($custom_cat, $showpost = -1) {

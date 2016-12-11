@@ -1,0 +1,283 @@
+{
+    "key": "group_584b8a4ceeace",
+    "title": "Group Feature Banner Fields",
+    "fields": [
+        {
+            "layouts": [
+                {
+                    "key": "584b8b76e291a",
+                    "name": "feature_sliders",
+                    "label": "Feature Sliders",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "layouts": [
+                                {
+                                    "key": "584bbdd175db8",
+                                    "name": "slider_item",
+                                    "label": "Slider Item",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "return_format": "array",
+                                            "preview_size": "full",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": "",
+                                            "key": "field_584bbdfd256a3",
+                                            "label": "slider_image",
+                                            "name": "slider_image",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        },
+                                        {
+                                            "default_value": "",
+                                            "new_lines": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "rows": 3,
+                                            "key": "field_584bbe17256a4",
+                                            "label": "Slider Description",
+                                            "name": "slider_description",
+                                            "type": "textarea",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": "",
+                            "button_label": "Add Slider Items",
+                            "key": "field_584bbdaf256a2",
+                            "label": "Feature Slider",
+                            "name": "feature_slider",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "584bbe49256a5",
+                    "name": "feature_banner_image",
+                    "label": "Feature Banner Image",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "return_format": "array",
+                            "preview_size": "full",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "key": "field_584bbe60256a6",
+                            "label": "Banner Image",
+                            "name": "banner_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "default_value": "",
+                            "new_lines": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "rows": 3,
+                            "key": "field_584bc6e4eae1d",
+                            "label": "Banner Description",
+                            "name": "banner_description",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "584bbe85256a7",
+                    "name": "feature_banner_maps",
+                    "label": "Feature Banner Maps",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "height": "",
+                            "center_lat": "",
+                            "center_lng": "",
+                            "zoom": "",
+                            "key": "field_584bbe98256a8",
+                            "label": "Banner Maps",
+                            "name": "banner_maps",
+                            "type": "google_map",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "default_value": 100,
+                            "min": 0,
+                            "max": "",
+                            "step": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_584bc991a4d98",
+                            "label": "Banner Map Height",
+                            "name": "banner_map_height",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "default_value": 100,
+                            "min": 0,
+                            "max": "",
+                            "step": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_584bcb00a4d99",
+                            "label": "Banner Map Width",
+                            "name": "banner_map_width",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ],
+            "min": "",
+            "max": "",
+            "button_label": "Add Feature Fields",
+            "key": "field_584b8b6c0a468",
+            "label": "Feature Banner Fields",
+            "name": "feature_banner_fields",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "member"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "specialized"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "schedule"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": -5,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1481393511
+}

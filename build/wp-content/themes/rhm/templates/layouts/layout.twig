@@ -27,7 +27,7 @@
       {% endblock %}
 
       <main role="main" class="clearfix {% if ( sidebar_left != 'none' ) or ( not function('is_page') )  or ( sidebar_menu is not empty ) %}has-sidebar sidebar-left{% endif %}">
-        <div class="{{ page_layout }}{% if not function('is_page') %}container-wide{% endif %}">
+        <div class="{{ page_layout }}{% if not function('is_page') %} container-wide{% endif %}">
           {% if ( sidebar_left != 'none' ) or ( not function('is_page') ) or ( sidebar_menu ) %}
             <section class="sidebar-left">
               <div class="sidebar-left__inner">
@@ -37,7 +37,7 @@
             </section>
           {% endif %}
 
-          <div class="main-content {% if main_option == "on" %}no-padding{% endif %}">
+          <div class="main-content">
             {% block content %}
               <div class="content-wrapper">
                 {{context}}
