@@ -22,10 +22,13 @@
     {{  post.post_content|shortcodes }}
     {{ flexible_content('group_component') }}
     {{ flexible_content('view_component') }}
+    {% include 'box-service-list.twig' %}
+    {% include 'category-listprtt.twig' %}
   {% endfor %}
 
   {% if function('comments_open') %}
   {% include 'comments.twig' %}
+  {% include 'box-category-list.twig' %}
   {{ function('comment_form') }}
   {% endif %}
 

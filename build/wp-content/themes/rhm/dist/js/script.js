@@ -53,6 +53,13 @@
 
   $(document).ready(function() {
     $('.ajax-pagination .pager-item a').on('click', pagination_ajax);
+    $(".box-slide").slick({
+      autoplay: false,
+      autoplaySpeed: 2000,
+      dots: true,
+      arrows : false,
+      pauseOnHover: false,
+    });
   });
 
   $(window).load(function() {
