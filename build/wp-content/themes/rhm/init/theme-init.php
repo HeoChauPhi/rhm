@@ -305,5 +305,11 @@ function rhm_twig_data($data){
   $data['menu']['main'] = new TimberMenu('main');
   $data['menu']['footer'] = new TimberMenu('footer');
 
+  // Footer
+  $widget_data_sidebar = get_option('widget_sidebar_Widget');
+  $widget_data_header = get_option('widget_header_Widget');
+  $widget_data_footer = get_option('widget_footer_Widget');
+  $data['footer_widget'] = $widget_data_footer;
+
   return $data;
 }
