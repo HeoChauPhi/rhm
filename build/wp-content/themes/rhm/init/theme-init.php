@@ -8,7 +8,7 @@ use Timber\Menu;
 require_once dirname( __FILE__ ) . '/theme-support.php';
 
 // Get custom function template with Timber
-Timber::$dirname = array('templates', 'templates/blocks', 'templates/shortcode', 'templates/pages', 'templates/layouts', 'templates/elements');
+Timber::$dirname = array('templates', 'templates/blocks', 'templates/shortcode', 'templates/pages', 'templates/layouts', 'templates/elements', 'templates/views');
 
 // Disable Related post
 function related($custom_cat, $showpost = -1) {
@@ -309,6 +309,8 @@ function rhm_twig_data($data){
   $widget_data_sidebar = get_option('widget_sidebar_Widget');
   $widget_data_header = get_option('widget_header_Widget');
   $widget_data_footer = get_option('widget_footer_Widget');
+  $data['sidebar_widget'] = $widget_data_sidebar;
+  $data['header_widget'] = $widget_data_header;
   $data['footer_widget'] = $widget_data_footer;
 
   return $data;

@@ -6,10 +6,251 @@
             "layouts": [
                 {
                     "key": "584b894ff36a6",
-                    "name": "group_footer_copyright",
-                    "label": "Group footer copyright",
-                    "display": "block",
-                    "sub_fields": [],
+                    "name": "acf_footer_content",
+                    "label": "ACF Footer Content",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_584ed5dc7ca00",
+                            "label": "Footer Title",
+                            "name": "footer_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "default_value": "",
+                            "delay": 0,
+                            "key": "field_584ed5e67ca01",
+                            "label": "Footer Content",
+                            "name": "footer_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "layouts": [
+                                {
+                                    "key": "584ed61722c91",
+                                    "name": "footer_social_list",
+                                    "label": "Footer Social list",
+                                    "display": "row",
+                                    "sub_fields": [
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "key": "field_584ed63a7ca03",
+                                            "label": "Footer Social Name",
+                                            "name": "footer_social_name",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        },
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "key": "field_584ed6477ca04",
+                                            "label": "Footer Social Link",
+                                            "name": "footer_social_link",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        },
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "key": "field_584ed6507ca05",
+                                            "label": "Footer Social Class",
+                                            "name": "footer_social_class",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": "",
+                            "button_label": "Add Social Item",
+                            "key": "field_584ed6027ca02",
+                            "label": "Footer Social",
+                            "name": "footer_social",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "584ed7774e98f",
+                    "name": "acf_footer_posts_link",
+                    "label": "ACF Footer Posts Link",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_584ed7d04e991",
+                            "label": "Footer Posts Link Title",
+                            "name": "footer_posts_link_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "post_type": [],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1,
+                            "key": "field_584ed7924e990",
+                            "label": "Footer Posts Link List",
+                            "name": "footer_posts_link_list",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "584ed6767ca06",
+                    "name": "acf_footer_shortcode",
+                    "label": "ACF Footer Shortcode",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_584ed67d7ca07",
+                            "label": "Footer Shortcode Title",
+                            "name": "footer_shortcode_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "default_value": "",
+                            "new_lines": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "rows": 3,
+                            "key": "field_584ed6877ca08",
+                            "label": "Footer Shortcode Content",
+                            "name": "footer_shortcode_content",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_584ed68b7ca09",
+                            "label": "Footer Shortcode Name",
+                            "name": "footer_shortcode_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 }
@@ -18,8 +259,56 @@
             "max": "",
             "button_label": "Add Footer Blocks",
             "key": "field_584b8926956e6",
-            "label": "Footer Fields",
-            "name": "footer_fields",
+            "label": "Footer Top Fields",
+            "name": "footer_top_fields",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layouts": [
+                {
+                    "key": "584ed6b80ae34",
+                    "name": "acf_footer_copyright",
+                    "label": "ACF Footer Copyright",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_584ed6c17ca0b",
+                            "label": "Footer Copyright",
+                            "name": "footer_copyright",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ],
+            "min": "",
+            "max": "",
+            "button_label": "Add Footer Block",
+            "key": "field_584ed6aa7ca0a",
+            "label": "Footer Bottom Fields",
+            "name": "footer_bottom_fields",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -48,5 +337,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1481548292
+    "modified": 1481562415
 }

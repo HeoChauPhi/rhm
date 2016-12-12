@@ -1,25 +1,63 @@
 {
     "key": "group_584b6b8fa4a24",
-    "title": "Hotline",
+    "title": "Group Header Blocks",
     "fields": [
         {
             "layouts": [
                 {
                     "key": "584b79d21e953",
-                    "name": "hotline_bs",
-                    "label": "Hotline BS",
-                    "display": "block",
+                    "name": "acf_header_text",
+                    "label": "ACF Header Text",
+                    "display": "row",
                     "sub_fields": [
                         {
                             "default_value": "",
-                            "new_lines": "",
                             "maxlength": "",
                             "placeholder": "",
-                            "rows": 4,
+                            "prepend": "",
+                            "append": "",
                             "key": "field_584b79ef828c2",
-                            "label": "hotline format text",
-                            "name": "hotline_format_text",
-                            "type": "textarea",
+                            "label": "Header Text Title",
+                            "name": "header_text_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "default_value": "",
+                            "delay": 0,
+                            "key": "field_584eda62c1dd5",
+                            "label": "Header Text Content",
+                            "name": "header_text_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "key": "field_584eda72c1dd6",
+                            "label": "Header Text Class",
+                            "name": "header_text_class",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -36,10 +74,10 @@
             ],
             "min": "",
             "max": "",
-            "button_label": "Add Row",
+            "button_label": "Add Header Blocks",
             "key": "field_584b6bc650327",
-            "label": "Hotline Header Top",
-            "name": "group_header_top",
+            "label": "Header Blocks",
+            "name": "header_blocks",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -68,5 +106,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1481341501
+    "modified": 1481562792
 }
