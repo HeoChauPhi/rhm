@@ -9,6 +9,7 @@ build/wp-content/cache/
 Gemfile.lock
 Vagrantfile
 composer.lock
+.htaccess
 
 # Numerous always-ignore extensions
 *.diff
