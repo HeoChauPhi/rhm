@@ -3,21 +3,6 @@
     "title": "View Component",
     "fields": [
         {
-            "key": "field_57da0e0492c4a",
-            "label": "View Component",
-            "name": "view_component",
-            "type": "flexible_content",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "button_label": "Add Component",
-            "min": "",
-            "max": "",
             "layouts": [
                 {
                     "key": "57f1d68c469f1",
@@ -26,6 +11,11 @@
                     "display": "row",
                     "sub_fields": [
                         {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
                             "key": "field_57f1d68c469f2",
                             "label": "Box Views title",
                             "name": "box_views_title",
@@ -37,14 +27,19 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            }
                         },
                         {
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "choices": {
+                                "views": "Default Template"
+                            },
+                            "default_value": [],
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value",
                             "key": "field_57f1d863b8347",
                             "label": "Box Views Template",
                             "name": "box_views_template",
@@ -56,19 +51,14 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "choices": {
-                                "views": "Default Template"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
+                            }
                         },
                         {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
                             "key": "field_57f1d68c469f4",
                             "label": "Filter by Post Type",
                             "name": "filter_by_post_type",
@@ -80,14 +70,14 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
+                            }
+                        },
+                        {
                             "default_value": "",
+                            "maxlength": "",
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
-                        },
-                        {
                             "key": "field_57f1d6ec46a01",
                             "label": "Filter by Taxonomy ID",
                             "name": "filter_by_taxonomy_id",
@@ -99,14 +89,14 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "default_value": "",
+                            }
+                        },
+                        {
+                            "default_value": -1,
+                            "maxlength": "",
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
-                        },
-                        {
                             "key": "field_57f1d70346a02",
                             "label": "Post Per Page",
                             "name": "post_per_page",
@@ -118,14 +108,62 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "default_value": -1,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            }
                         },
                         {
+                            "layouts": [
+                                {
+                                    "key": "57da791e9dc37",
+                                    "name": "box_shortcode_variable",
+                                    "label": "Filter By",
+                                    "display": "row",
+                                    "sub_fields": [
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "key": "field_57f1d68c469f6",
+                                            "label": "Custom Field Slug",
+                                            "name": "custom_field_slug",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        },
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "key": "field_57f1d68c469f7",
+                                            "label": "Custom Field Value",
+                                            "name": "custom_field_value",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": "",
+                            "button_label": "Add Variable",
                             "key": "field_57f1d68c469f5",
                             "label": "Filter By Custom Fields",
                             "name": "filter_by_custom_fields",
@@ -145,62 +183,14 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "button_label": "Add Variable",
-                            "min": "",
-                            "max": "",
-                            "layouts": [
-                                {
-                                    "key": "57da791e9dc37",
-                                    "name": "box_shortcode_variable",
-                                    "label": "Filter By",
-                                    "display": "row",
-                                    "sub_fields": [
-                                        {
-                                            "key": "field_57f1d68c469f6",
-                                            "label": "Custom Field Slug",
-                                            "name": "custom_field_slug",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
-                                            "key": "field_57f1d68c469f7",
-                                            "label": "Custom Field Value",
-                                            "name": "custom_field_value",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
-                                        }
-                                    ],
-                                    "min": "",
-                                    "max": ""
-                                }
-                            ]
+                            }
                         },
                         {
+                            "default_value": 1,
+                            "message": "Use pagination",
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
                             "key": "field_57f4b1d831448",
                             "label": "Box Views Pagination",
                             "name": "box_views_pagination",
@@ -212,11 +202,19 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "message": "Use pagination",
-                            "default_value": 1
+                            }
                         },
                         {
+                            "layout": "vertical",
+                            "choices": {
+                                "default": "Default Pagination",
+                                "ajax": "Use ajax Pagination"
+                            },
+                            "default_value": "default",
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "allow_null": 0,
+                            "return_format": "value",
                             "key": "field_57f4b21f31449",
                             "label": "Pagination Type",
                             "name": "pagination_type",
@@ -236,34 +234,9 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "choices": {
-                                "default": "Default Pagination",
-                                "ajax": "Use ajax Pagination"
-                            },
-                            "allow_null": 0,
-                            "other_choice": 0,
-                            "save_other_choice": 0,
-                            "default_value": "default",
-                            "layout": "vertical",
-                            "return_format": "value"
+                            }
                         },
                         {
-                            "key": "field_57f1d68c469f8",
-                            "label": "Views Custom Fields",
-                            "name": "views_custom_fields",
-                            "type": "flexible_content",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "button_label": "Add Custom FIelds",
-                            "min": "",
-                            "max": "",
                             "layouts": [
                                 {
                                     "key": "57da791e9dc37",
@@ -272,6 +245,11 @@
                                     "display": "row",
                                     "sub_fields": [
                                         {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
                                             "key": "field_57f1d68c469f9",
                                             "label": "Link Text",
                                             "name": "link_text",
@@ -283,14 +261,14 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
+                                            }
+                                        },
+                                        {
                                             "default_value": "",
+                                            "maxlength": "",
                                             "placeholder": "",
                                             "prepend": "",
                                             "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
                                             "key": "field_57f1d68c469fa",
                                             "label": "Link URL",
                                             "name": "link_url",
@@ -302,14 +280,14 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
+                                            }
+                                        },
+                                        {
                                             "default_value": "",
+                                            "maxlength": "",
                                             "placeholder": "",
                                             "prepend": "",
                                             "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
                                             "key": "field_57fdaa6e07c15",
                                             "label": "Custom Field Class",
                                             "name": "custom_field_class",
@@ -321,12 +299,7 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
+                                            }
                                         }
                                     ],
                                     "min": "",
@@ -339,6 +312,11 @@
                                     "display": "row",
                                     "sub_fields": [
                                         {
+                                            "tabs": "all",
+                                            "toolbar": "full",
+                                            "media_upload": 1,
+                                            "default_value": "",
+                                            "delay": 0,
                                             "key": "field_57f5da8b6e94e",
                                             "label": "Text Area",
                                             "name": "text_area",
@@ -350,13 +328,14 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "default_value": "",
-                                            "tabs": "all",
-                                            "toolbar": "full",
-                                            "media_upload": 1
+                                            }
                                         },
                                         {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
                                             "key": "field_57fdaa7e07c16",
                                             "label": "Custom Field Class",
                                             "name": "custom_field_class",
@@ -368,12 +347,7 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
+                                            }
                                         }
                                     ],
                                     "min": "",
@@ -386,18 +360,8 @@
                                     "display": "row",
                                     "sub_fields": [
                                         {
-                                            "key": "field_57f5dab36e94f",
-                                            "label": "List Icons",
-                                            "name": "list_icons",
-                                            "type": "select",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
+                                            "multiple": 1,
+                                            "allow_null": 1,
                                             "choices": {
                                                 "none": "None",
                                                 "circle": "Circle",
@@ -426,18 +390,14 @@
                                                 "icon-clock": "Icon Clock"
                                             },
                                             "default_value": [],
-                                            "allow_null": 1,
-                                            "multiple": 1,
                                             "ui": 1,
                                             "ajax": 1,
+                                            "placeholder": "",
                                             "return_format": "value",
-                                            "placeholder": ""
-                                        },
-                                        {
-                                            "key": "field_57f5db0a6e950",
-                                            "label": "List text",
-                                            "name": "list_text",
-                                            "type": "flexible_content",
+                                            "key": "field_57f5dab36e94f",
+                                            "label": "List Icons",
+                                            "name": "list_icons",
+                                            "type": "select",
                                             "instructions": "",
                                             "required": 0,
                                             "conditional_logic": 0,
@@ -445,10 +405,9 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "button_label": "Add Row",
-                                            "min": "",
-                                            "max": "",
+                                            }
+                                        },
+                                        {
                                             "layouts": [
                                                 {
                                                     "key": "57f5db162c410",
@@ -457,6 +416,11 @@
                                                     "display": "block",
                                                     "sub_fields": [
                                                         {
+                                                            "default_value": "",
+                                                            "maxlength": "",
+                                                            "placeholder": "",
+                                                            "prepend": "",
+                                                            "append": "",
                                                             "key": "field_57f5db1f6e951",
                                                             "label": "List item",
                                                             "name": "list_item",
@@ -468,20 +432,35 @@
                                                                 "width": "",
                                                                 "class": "",
                                                                 "id": ""
-                                                            },
-                                                            "default_value": "",
-                                                            "placeholder": "",
-                                                            "prepend": "",
-                                                            "append": "",
-                                                            "maxlength": ""
+                                                            }
                                                         }
                                                     ],
                                                     "min": "",
                                                     "max": ""
                                                 }
-                                            ]
+                                            ],
+                                            "min": "",
+                                            "max": "",
+                                            "button_label": "Add Row",
+                                            "key": "field_57f5db0a6e950",
+                                            "label": "List text",
+                                            "name": "list_text",
+                                            "type": "flexible_content",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
                                         },
                                         {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
                                             "key": "field_57fdaa8307c17",
                                             "label": "Custom Field Class",
                                             "name": "custom_field_class",
@@ -493,12 +472,7 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
+                                            }
                                         }
                                     ],
                                     "min": "",
@@ -511,6 +485,8 @@
                                     "display": "row",
                                     "sub_fields": [
                                         {
+                                            "width": 640,
+                                            "height": 390,
                                             "key": "field_57f5db5b6e952",
                                             "label": "Shortcode oEmbed",
                                             "name": "shortcode_oembed",
@@ -522,11 +498,14 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "width": 640,
-                                            "height": 390
+                                            }
                                         },
                                         {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
                                             "key": "field_57fdaa8807c18",
                                             "label": "Custom Field Class",
                                             "name": "custom_field_class",
@@ -538,12 +517,7 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
+                                            }
                                         }
                                     ],
                                     "min": "",
@@ -556,21 +530,6 @@
                                     "display": "row",
                                     "sub_fields": [
                                         {
-                                            "key": "field_57fdab216336f",
-                                            "label": "Select List",
-                                            "name": "select_list",
-                                            "type": "flexible_content",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "button_label": "Add Select Item",
-                                            "min": "",
-                                            "max": "",
                                             "layouts": [
                                                 {
                                                     "key": "57fdab300c0c8",
@@ -579,6 +538,11 @@
                                                     "display": "block",
                                                     "sub_fields": [
                                                         {
+                                                            "default_value": "",
+                                                            "maxlength": "",
+                                                            "placeholder": "",
+                                                            "prepend": "",
+                                                            "append": "",
                                                             "key": "field_57fdab3d63370",
                                                             "label": "Select Text Item",
                                                             "name": "select_text_item",
@@ -590,14 +554,14 @@
                                                                 "width": "",
                                                                 "class": "",
                                                                 "id": ""
-                                                            },
+                                                            }
+                                                        },
+                                                        {
                                                             "default_value": "",
+                                                            "maxlength": "",
                                                             "placeholder": "",
                                                             "prepend": "",
                                                             "append": "",
-                                                            "maxlength": ""
-                                                        },
-                                                        {
                                                             "key": "field_57fdab6663371",
                                                             "label": "Select Value Item",
                                                             "name": "select_value_item",
@@ -609,20 +573,35 @@
                                                                 "width": "",
                                                                 "class": "",
                                                                 "id": ""
-                                                            },
-                                                            "default_value": "",
-                                                            "placeholder": "",
-                                                            "prepend": "",
-                                                            "append": "",
-                                                            "maxlength": ""
+                                                            }
                                                         }
                                                     ],
                                                     "min": "",
                                                     "max": ""
                                                 }
-                                            ]
+                                            ],
+                                            "min": "",
+                                            "max": "",
+                                            "button_label": "Add Select Item",
+                                            "key": "field_57fdab216336f",
+                                            "label": "Select List",
+                                            "name": "select_list",
+                                            "type": "flexible_content",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
                                         },
                                         {
+                                            "default_value": 1,
+                                            "message": "",
+                                            "ui": 0,
+                                            "ui_on_text": "",
+                                            "ui_off_text": "",
                                             "key": "field_57fdada1dcc6e",
                                             "label": "Add Nothing Item",
                                             "name": "add_nothing_item",
@@ -634,11 +613,14 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "message": "",
-                                            "default_value": 1
+                                            }
                                         },
                                         {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "Value for field",
+                                            "prepend": "",
+                                            "append": "",
                                             "key": "field_57fdae544babe",
                                             "label": "Default Item",
                                             "name": "default_item",
@@ -650,14 +632,14 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "Value for field",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
+                                            }
                                         },
                                         {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
                                             "key": "field_57fdab9663372",
                                             "label": "Custom Field Class",
                                             "name": "custom_field_class",
@@ -669,20 +651,35 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
+                                            }
                                         }
                                     ],
                                     "min": "",
                                     "max": ""
                                 }
-                            ]
+                            ],
+                            "min": "",
+                            "max": "",
+                            "button_label": "Add Custom FIelds",
+                            "key": "field_57f1d68c469f8",
+                            "label": "Views Custom Fields",
+                            "name": "views_custom_fields",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
                         },
                         {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
                             "key": "field_57f1d68c46a00",
                             "label": "Box Component Class",
                             "name": "box_component_class",
@@ -694,12 +691,7 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            }
                         }
                     ],
                     "min": "",
@@ -712,6 +704,11 @@
                     "display": "row",
                     "sub_fields": [
                         {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
                             "key": "field_57da76f6d1fd1",
                             "label": "Box Shortcode title",
                             "name": "box_shortcode_title",
@@ -723,14 +720,14 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
+                            }
+                        },
+                        {
                             "default_value": "",
+                            "maxlength": "",
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "maxlength": ""
-                        },
-                        {
                             "key": "field_57da772bd1fd2",
                             "label": "Box Shortcode Name",
                             "name": "box_shortcode_name",
@@ -742,29 +739,9 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            }
                         },
                         {
-                            "key": "field_57da78f4d0d95",
-                            "label": "Shortcode Filter By",
-                            "name": "box_shortcode_variables",
-                            "type": "flexible_content",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "button_label": "Add Variable",
-                            "min": "",
-                            "max": "",
                             "layouts": [
                                 {
                                     "key": "57da791e9dc37",
@@ -773,6 +750,11 @@
                                     "display": "row",
                                     "sub_fields": [
                                         {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
                                             "key": "field_57da798fd0d96",
                                             "label": "Shortcode Variable",
                                             "name": "shortcode_variable",
@@ -784,14 +766,14 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
+                                            }
+                                        },
+                                        {
                                             "default_value": "",
+                                            "maxlength": "",
                                             "placeholder": "",
                                             "prepend": "",
                                             "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
                                             "key": "field_57da79bad0d97",
                                             "label": "Shortcode Value",
                                             "name": "shortcode_value",
@@ -803,23 +785,19 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
+                                            }
                                         }
                                     ],
                                     "min": "",
                                     "max": ""
                                 }
-                            ]
-                        },
-                        {
-                            "key": "field_57edcc51b5d2f",
-                            "label": "Shortcode Custom Fields",
-                            "name": "shortcode_custom_fields",
+                            ],
+                            "min": "",
+                            "max": "",
+                            "button_label": "Add Variable",
+                            "key": "field_57da78f4d0d95",
+                            "label": "Shortcode Filter By",
+                            "name": "box_shortcode_variables",
                             "type": "flexible_content",
                             "instructions": "",
                             "required": 0,
@@ -828,10 +806,9 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "button_label": "Add Custom FIelds",
-                            "min": "",
-                            "max": "",
+                            }
+                        },
+                        {
                             "layouts": [
                                 {
                                     "key": "57da791e9dc37",
@@ -840,6 +817,11 @@
                                     "display": "row",
                                     "sub_fields": [
                                         {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
                                             "key": "field_57edcc51b5d30",
                                             "label": "Link Text",
                                             "name": "link_text",
@@ -851,14 +833,14 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
+                                            }
+                                        },
+                                        {
                                             "default_value": "",
+                                            "maxlength": "",
                                             "placeholder": "",
                                             "prepend": "",
                                             "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
                                             "key": "field_57edcdb486a8e",
                                             "label": "Link URL",
                                             "name": "link_url",
@@ -870,12 +852,7 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
+                                            }
                                         }
                                     ],
                                     "min": "",
@@ -888,6 +865,11 @@
                                     "display": "row",
                                     "sub_fields": [
                                         {
+                                            "tabs": "all",
+                                            "toolbar": "full",
+                                            "media_upload": 1,
+                                            "default_value": "",
+                                            "delay": 0,
                                             "key": "field_57edd1e9f1125",
                                             "label": "Text Area",
                                             "name": "text_area",
@@ -899,11 +881,7 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "default_value": "",
-                                            "tabs": "all",
-                                            "toolbar": "full",
-                                            "media_upload": 1
+                                            }
                                         }
                                     ],
                                     "min": "",
@@ -916,18 +894,8 @@
                                     "display": "row",
                                     "sub_fields": [
                                         {
-                                            "key": "field_57edd20bf1127",
-                                            "label": "List Icons",
-                                            "name": "list_icons",
-                                            "type": "select",
-                                            "instructions": "",
-                                            "required": "",
-                                            "conditional_logic": "",
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
+                                            "multiple": "",
+                                            "allow_null": "",
                                             "choices": {
                                                 "none": "None",
                                                 "circle": "Circle",
@@ -956,18 +924,14 @@
                                                 "icon-clock": "Icon Clock"
                                             },
                                             "default_value": [],
-                                            "allow_null": "",
-                                            "multiple": "",
                                             "ui": "",
                                             "ajax": "",
+                                            "placeholder": "",
                                             "return_format": "",
-                                            "placeholder": ""
-                                        },
-                                        {
-                                            "key": "field_57edd433f1128",
-                                            "label": "List text",
-                                            "name": "list_text",
-                                            "type": "flexible_content",
+                                            "key": "field_57edd20bf1127",
+                                            "label": "List Icons",
+                                            "name": "list_icons",
+                                            "type": "select",
                                             "instructions": "",
                                             "required": "",
                                             "conditional_logic": "",
@@ -975,10 +939,9 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "button_label": "Add Row",
-                                            "min": "",
-                                            "max": "",
+                                            }
+                                        },
+                                        {
                                             "layouts": [
                                                 {
                                                     "key": "57edd4abacd2d",
@@ -987,6 +950,11 @@
                                                     "display": "block",
                                                     "sub_fields": [
                                                         {
+                                                            "default_value": "",
+                                                            "maxlength": "",
+                                                            "placeholder": "",
+                                                            "prepend": "",
+                                                            "append": "",
                                                             "key": "field_57edd4caf1129",
                                                             "label": "List Item",
                                                             "name": "list_item",
@@ -998,18 +966,28 @@
                                                                 "width": "",
                                                                 "class": "",
                                                                 "id": ""
-                                                            },
-                                                            "default_value": "",
-                                                            "placeholder": "",
-                                                            "prepend": "",
-                                                            "append": "",
-                                                            "maxlength": ""
+                                                            }
                                                         }
                                                     ],
                                                     "min": "",
                                                     "max": ""
                                                 }
-                                            ]
+                                            ],
+                                            "min": "",
+                                            "max": "",
+                                            "button_label": "Add Row",
+                                            "key": "field_57edd433f1128",
+                                            "label": "List text",
+                                            "name": "list_text",
+                                            "type": "flexible_content",
+                                            "instructions": "",
+                                            "required": "",
+                                            "conditional_logic": "",
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
                                         }
                                     ],
                                     "min": "",
@@ -1022,6 +1000,8 @@
                                     "display": "row",
                                     "sub_fields": [
                                         {
+                                            "width": 640,
+                                            "height": 390,
                                             "key": "field_57edd4ebf112b",
                                             "label": "Shortcode oEmbed",
                                             "name": "shortcode_oembed",
@@ -1033,17 +1013,35 @@
                                                 "width": "",
                                                 "class": "",
                                                 "id": ""
-                                            },
-                                            "width": 640,
-                                            "height": 390
+                                            }
                                         }
                                     ],
                                     "min": "",
                                     "max": ""
                                 }
-                            ]
+                            ],
+                            "min": "",
+                            "max": "",
+                            "button_label": "Add Custom FIelds",
+                            "key": "field_57edcc51b5d2f",
+                            "label": "Shortcode Custom Fields",
+                            "name": "shortcode_custom_fields",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
                         },
                         {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
                             "key": "field_57da7736d1fd3",
                             "label": "Box Component Class",
                             "name": "box_component_class",
@@ -1055,18 +1053,28 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            }
                         }
                     ],
                     "min": "",
                     "max": ""
                 }
-            ]
+            ],
+            "min": "",
+            "max": "",
+            "button_label": "Add Component",
+            "key": "field_57da0e0492c4a",
+            "label": "View Component",
+            "name": "view_component",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
         }
     ],
     "location": [
@@ -1091,7 +1099,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": 0,
     "description": "",
-    "modified": 1479717718
+    "modified": 1481548343
 }

@@ -3,17 +3,21 @@
 {% extends 'layout.twig' %}
 
 {% block feature %}
-  <div class="feature">
-    {{ flexible_content('feature_banner_fields') }}
-  </div>
+  {% if term.feature_banner_fields %}
+    <div class="feature">
+      {{ flexible_content('feature_banner_fields') }}
+    </div>
+  {% endif %}
 {% endblock %}
 
 {% block content %}
   <h1 id="page-title">{{term.name}}</h1>
 
-  <div class="box-category-image">
-    {{ flexible_content('categories_fields') }}
-  </div>
+  {% if term.categories_fields %}
+    <div class="box-category-image">
+      {{ flexible_content('categories_fields') }}
+    </div>
+  {% endif %}
 
   {% include ["taxonomy-"~term.id~".twig", "taxonomy-"~term.taxonomy~".twig", 'taxonomy-tease.twig'] %}
 {% endblock %}

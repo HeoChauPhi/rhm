@@ -26,16 +26,14 @@
       {% block feature %}
       {% endblock %}
 
-      <main role="main" class="clearfix {% if ( sidebar_left != 'none' ) or ( not function('is_page') )  or ( sidebar_menu is not empty ) %}has-sidebar sidebar-left{% endif %}">
+      <main role="main" class="clearfix">
         <div class="{{ page_layout }}{% if not function('is_page') %} container-wide{% endif %}">
-          {% if ( sidebar_left != 'none' ) or ( not function('is_page') ) or ( sidebar_menu ) %}
-            <section class="sidebar-left">
-              <div class="sidebar-left__inner">
-                {% block aside %}
-                {% endblock %}
-              </div>
-            </section>
-          {% endif %}
+          <section class="sidebar-left">
+            <div class="sidebar-left__inner">
+              {% block aside %}
+              {% endblock %}
+            </div>
+          </section>
 
           <div class="main-content">
             {% block content %}

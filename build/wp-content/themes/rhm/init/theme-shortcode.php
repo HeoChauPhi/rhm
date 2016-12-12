@@ -1,7 +1,7 @@
 <?php
 // View List
-add_shortcode( 'view_list', 'cat_view_list' );
-function cat_view_list($attrs) {
+add_shortcode( 'view_list', 'rhm_view_list' );
+function rhm_view_list($attrs) {
   extract(shortcode_atts (array(
     'name'        => '',
     'post_type'   => '',
@@ -94,6 +94,28 @@ function cat_view_list($attrs) {
     Timber::render( array( 'view-' . $name . '.twig', 'views.twig'), $context );
     } catch (Exception $e) {
       echo 'Could not find a twig file for Shortcode Name: ' . $name;
+    }
+
+    $content = ob_get_contents();
+  ob_end_clean();
+  return $content;
+  wp_reset_postdata();
+}
+
+add_shortcode( 'view_tax_terms', 'rhm_view_tax_terms' );
+function rhm_view_tax_terms($attrs) {
+  extract(shortcode_atts (array(
+    'name'        => '',
+  ), $attrs));
+
+  ob_start();
+
+    echo $name;
+
+    try {
+    Timber::render('view-' . $name . '.twig', $context );
+    } catch (Exception $e) {
+      echo 'Could not find a twig file for Shortcode Name: view-' . $name;
     }
 
     $content = ob_get_contents();

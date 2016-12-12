@@ -1,9 +1,11 @@
 {% extends 'layout.twig' %}
 
 {% block feature %}
-  <div class="feature">
-    {{ flexible_content('feature_banner_fields') }}
-  </div>
+  {% if post.get_field('feature_banner_fields') %}
+    <div class="feature">
+      {{ flexible_content('feature_banner_fields') }}
+    </div>
+  {% endif %}
 {% endblock %}
 
 {% block content %}
