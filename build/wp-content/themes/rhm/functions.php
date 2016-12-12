@@ -22,7 +22,7 @@ if(!is_admin()) {
     wp_register_script('googlemap', get_stylesheet_directory_uri() . '/dist/js/libs/gmaps.js', array('jquery'), FALSE, '0.4.24', TRUE);
     wp_enqueue_script('googlemap');
 
-    wp_register_script('lib-slick', get_stylesheet_directory_uri() . '/dist/js/libs/slick.js', array('jquery'), FALSE, '0.7.0', TRUE);
+    wp_register_script('lib-slick', get_stylesheet_directory_uri() . '/dist/js/libs/slick.min.js', array('jquery'), FALSE, '1.6.0', TRUE);
     wp_enqueue_script('lib-slick');
 
     wp_register_script('lib-matchHeight', get_stylesheet_directory_uri() . '/dist/js/libs/jquery.matchHeight-min.js', array('jquery'), FALSE, '0.7.0', TRUE);
@@ -40,6 +40,11 @@ if(!is_admin()) {
   // Add stylesheet
   function rhm_styles() {
     $styles = get_stylesheet_directory_uri() . '/dist/css/styles.css';
+    wp_register_style('slick', get_stylesheet_directory_uri() . '/dist/css/slick.css', array(), '1.6.0', 'all');
+    wp_enqueue_style('slick');
+    wp_register_style('slick-theme', get_stylesheet_directory_uri() . '/dist/css/slick-theme.css', array(), '1.6.0', 'all');
+    wp_enqueue_style('slick-theme');
+
     wp_register_style('theme-style', $styles, array(), '1.0', 'all');
     wp_enqueue_style('theme-style');
   }

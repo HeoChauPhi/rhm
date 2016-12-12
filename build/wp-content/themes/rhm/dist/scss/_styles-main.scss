@@ -35,7 +35,10 @@
 @import 'vendors/slick';
 @import 'vendors/fancybox';
 
-// Blocks
+// Components
+@import 'components/box-slide';
+@import 'components/box-service';
+@import 'components/box-ctgr-list';
 
 // Layouts
 @import 'layouts/layout';
