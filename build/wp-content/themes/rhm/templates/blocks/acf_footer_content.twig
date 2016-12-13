@@ -1,0 +1,11 @@
+<div class="box-content-footer footer__top__item">
+ <h2 class="box-title">{{footer_title}}</h2>
+  <div class="box-content-foote__content">{{footer_content}}</div>
+  <div class="box-social">
+    {% for item in footer_social %}
+     <div class="box-social__item">
+        <a href="{{item.footer_social_link}}" class="{{item.footer_social_class}}">{{ item.footer_social_name }}</a>
+     </div>
+    {% endfor %}
+   </div>
+</div>

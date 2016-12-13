@@ -1,0 +1,8 @@
+<div class="block-link box-menu footer__top__item">
+  <h2 class="box-title"> {{footer_posts_link_title}}  </h2>
+  <ul class="menu">
+    {% for post in footer_posts_link_list %}
+      <li> <a href=" {{ post.post_name }} "> {{post.post_title}} </a></li>
+    {% endfor %}
+  </ul>
+</div>

@@ -2,9 +2,11 @@
   <footer id="footer" class="footer">
     <div class="footer__top">
       <div class="container-wide">
+        <div class="footer__top-group">
         {% for key, footer in footer_widget %}
           {{acfwidget('footer_top_fields', 'footer_widget-' ~ key )}}
         {% endfor %}
+        </div>
       </div>
     </div>
     <div class="footer__bottom">

@@ -1,0 +1,18 @@
+<div class="views {{ ajax_views }} box-member">
+  <div class="container-wide">
+    <div class="box-member__list">
+    {% for post in posts %}
+      <div class=" box-member__item col-md-3 {{post.class|join(" ")}}">
+      {% if post.members_photo %}
+        <div class="box-member__image">
+          <img src="{{ post.get_field('members_photo').url }}" />
+        </div>
+        {% endif %}
+        <h3 class="box-member__name post-title">{{ post.title }}</h3>
+        <div class="box-member__position">{{post.get_field("member_positions")}}</div>
+        <div class="views_link"><a href=" {{post.link}} ">xem thêm</a></div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>

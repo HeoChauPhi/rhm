@@ -33,7 +33,8 @@
                             "multiple": 0,
                             "allow_null": 0,
                             "choices": {
-                                "views": "Default Template"
+                                "views": "Default Template",
+                                "member": "Member"
                             },
                             "default_value": [],
                             "ui": 0,
@@ -1101,5 +1102,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1481548343
+    "modified": 1481644917
 }

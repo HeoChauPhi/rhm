@@ -1,0 +1,38 @@
+.box-member {
+  text-align: center;
+  &-wrap {
+    padding: rem(62px) 0 rem(40px);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  &__image {
+    line-height: 0;
+    width: rem(200px);
+    height: rem(200px);
+    border-radius: rem(200px);
+    overflow: hidden;
+    margin: 0 auto rem(27px);
+    border: 1px solid #ccc;
+  }
+
+  &__name {
+    font-size: rem(16px);
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+
+  &__position {
+    font-weight: 300;
+  }
+
+  .views_link {
+    a {
+      font-weight: 100;
+    }
+  }
+}

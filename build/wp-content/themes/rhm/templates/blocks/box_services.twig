@@ -1,0 +1,16 @@
+<div class="box-service">
+   <div class="container-wide">
+     <h2 class="box-title">Chúng tôi mang lại cho bạn những điều tốt nhất </h2>
+
+     <div class="box-service__list">
+      {% for item in services_list %}
+       <div class="box-service__item">
+         <div class="box-service__group">
+           <div class="box-service__icon"><img src=" {{ item.service_image.url }} " alt="item.service_image.alt"></div>
+           <h5 class="box-service__title"> {{item.service_title}} </h5>
+         </div>
+       </div>
+     {% endfor %}
+      </div>
+   </div>
+ </div>

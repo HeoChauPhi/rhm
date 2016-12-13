@@ -1,4 +1,38 @@
 .box-ctgr {
   background-color: $green-light;
+  padding: 45px 0;
+
+  &__list {
+    width: 40%;
+    float: right;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  &_description {
+    font-size: 13px;
+  }
 }
 
+
+.category-banner {
+
+  &__item {
+    padding: 0 10px;
+  }
+
+  &__list {
+    width: 60%;
+    float: left;
+    display: flex;
+    padding-right: 30px;
+  }
+}
