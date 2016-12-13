@@ -175,8 +175,9 @@ function flexible_content($name) {
 
   if (is_archive()){
     $queried_object = get_queried_object();
+    $tax_name = $queried_object->taxonomy;
     $term_id = $queried_object->term_id;
-    $fc = get_field($name, 'term_' . $term_id);
+    $fc = get_field($name, $tax_name . '_' . $term_id);
   } else {
     $fc = get_field( $name, $post->ID );
   }
