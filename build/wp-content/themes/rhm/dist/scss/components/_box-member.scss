@@ -12,11 +12,12 @@
 
   &__image {
     line-height: 0;
-    width: rem(140px);
-    height: rem(140px);
+    width: rem(200px);
+    height: rem(200px);
     border-radius: rem(200px);
     overflow: hidden;
     margin: 0 auto rem(27px);
+    border: 1px solid #ccc;
   }
 
   &__name {

@@ -49,7 +49,7 @@ function shortcode($name) {
 function acfwidget($name, $widgetid) {
   if (get_field($name, 'widget_'.$widgetid)) {
     $afcfield = get_field($name, 'widget_'.$widgetid);
-    print_r($afcfield);
+    //print_r($afcfield);
 
     if ( !empty( $afcfield ) ) {
       foreach ($afcfield as $field) {

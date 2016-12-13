@@ -1,23 +1,29 @@
-<div class="{{ component_class }}">
-  <h2>{{ activities_box_title }}</h2>
+<div class="{{ component_class }} box-ctgr">
+  <div class="container-wide">
+    <h2 class="box-title">{{ activities_box_title }}</h2>
 
-  {% if activities_images %}
-  <div>
-  {% for item in activities_images %}
-    <img src="{{ item.activities_image.url }}">
-    <div>{{ item.activities_title }}</div>
-  {% endfor %}
+    {% if activities_images %}
+    <div class="category-banner__list">
+      {% for item in activities_images %}
+        <div class="category-banner__item">
+          <div class="category-banner__group">
+            <div class="category-banner__icon"><img src="{{ item.activities_image.url }}"></div>
+            <h5 class="category-banner__title"> {{ item.activities_title }} </h5>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if activities_list %}
+    <div class="box-ctgr__list">
+    {% for item in activities_list %}
+      <div class="box-ctgr__item">
+        <h3 class="box-ctgr__title"><a href="{{get_term_name(item.slug, item.taxonomy).0.link}}">{{ item.name }}</a></h3>
+        <div class="box-ctgr_description">{{ item.description }}</div>
+      </div>
+    {% endfor %}
+    </div>
+    {% endif %}
   </div>
-  {% endif %}
-
-  {% if activities_list %}
-  <ul>
-  {% for item in activities_list %}
-    <li>
-      <a href="{{get_term_name(item.slug, item.taxonomy).0.link}}">{{ item.name }}</a>
-      <div>{{ item.description }}</div>
-    </li>
-  {% endfor %}
-  </ul>
-  {% endif %}
 </div>

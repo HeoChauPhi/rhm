@@ -16,10 +16,11 @@
     overflow: hidden;
     line-height: 0;
     width: 250px;
+    margin-bottom: 15px;
   }
 
   &__title {
-    color: $green;
+    color: #666;
     margin-bottom: rem(15px);
     text-transform: uppercase;
   }

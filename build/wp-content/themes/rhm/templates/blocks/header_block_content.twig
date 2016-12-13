@@ -1,0 +1,8 @@
+
+  <div class="box-social">
+    {% for item in header_socials %}
+     <div class="box-social__item">
+        <a href="{{item.header_social_link}}" class="{{item.header_social_class}}">{{ item.header_social_name }}</a>
+     </div>
+    {% endfor %}
+   </div>
