@@ -24,9 +24,6 @@
     {{  post.post_content|shortcodes }}
     {{ flexible_content('group_component') }}
     {{ flexible_content('view_component') }}
-    {% include 'box-service-list.twig' %}
-    {% include 'category-listprtt.twig' %}
-    {% include 'bacsi_prttpe.twig' %}
   {% endfor %}
 
   {% if function('comments_open') %}
@@ -39,7 +36,4 @@
 
 {% block aside %}
   {{ sidebar(sidebar_left) }}
-  {% if sidebar_menu %}
-    {% include 'sidebar-menu.twig' %}
-  {% endif %}
 {% endblock %}

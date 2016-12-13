@@ -1,0 +1,23 @@
+<div class="{{ component_class }}">
+  <h2>{{ activities_box_title }}</h2>
+
+  {% if activities_images %}
+  <div>
+  {% for item in activities_images %}
+    <img src="{{ item.activities_image.url }}">
+    <div>{{ item.activities_title }}</div>
+  {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if activities_list %}
+  <ul>
+  {% for item in activities_list %}
+    <li>
+      <a href="{{get_term_name(item.slug, item.taxonomy).0.link}}">{{ item.name }}</a>
+      <div>{{ item.description }}</div>
+    </li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+</div>

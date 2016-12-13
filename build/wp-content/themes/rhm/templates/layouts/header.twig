@@ -20,9 +20,11 @@
             <div class="site-description">{{site.description}}</div>
           </div>
         </div>
-        <div class="header__social">
-          {{acfwidget('group_footer', 'footer_widget-8')}}
-        </div>
+
+        {% for key, header in header_widget %}
+          {{acfwidget('header_blocks', 'header_widget-' ~ key )}}
+        {% endfor %}
+
       </div>
     </div>
     <div class="nav-wrapper">

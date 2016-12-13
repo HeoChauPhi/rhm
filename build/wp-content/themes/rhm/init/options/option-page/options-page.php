@@ -1,5 +1,5 @@
 <?php
-add_action( 'cmb2_admin_init', 'rhm_sidebar_option_metaboxes' );
+//add_action( 'cmb2_admin_init', 'rhm_sidebar_option_metaboxes' );
 function rhm_sidebar_option_metaboxes() {
 
   $prefix = '_cmb2_';

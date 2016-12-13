@@ -121,6 +121,7 @@ function taxvalue($tax) {
     echo '</ul>';
   }
 }
+
 // --> Disable term format function
 function customtax($customtax) {
   ob_start();
@@ -131,6 +132,7 @@ function customtax($customtax) {
   ob_end_clean();
   return $content;
 }
+
 // --> Disable term format shortcode
 add_shortcode( 'customtax', 'create_customtax' );
 function create_customtax($attrs) {
@@ -168,6 +170,9 @@ function flexible_content($name) {
   $fc_type = array();
 
   global $post;
+
+  //print_r($post);
+
   $fc = get_field( $name, $post->ID );
   $fc_ob = get_field_object( $name, $post->ID );
 
@@ -188,14 +193,14 @@ function flexible_content($name) {
           try {
             Timber::render($layout_sub . '.twig', $field_sub);
           } catch (Exception $e) {
-            echo 'Could not find a twig file for layout type: ' . $layout_sub;
+            echo 'Could not find a twig file for layout type: ' . $layout_sub . '<br>';
           }
         }
       } else {
         try {
           Timber::render($layout . '.twig', $field);
         } catch (Exception $e) {
-          echo 'Could not find a twig file for layout type: ' . $layout;
+          echo 'Could not find a twig file for layout type: ' . $layout . '<br>';
         }
       }
     }
