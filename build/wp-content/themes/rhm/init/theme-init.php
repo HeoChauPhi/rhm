@@ -181,7 +181,7 @@ function flexible_content($name) {
     $fc = get_field( $name, $post->ID );
   }
 
-  print_r($fc);
+  //print_r($fc);
   //print_r($fc_ob);
 
   if ( !empty( $fc ) ) {
