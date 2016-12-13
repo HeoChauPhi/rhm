@@ -1,5 +1,3 @@
-{% set sidebar_left = "none" %}
-
 {% extends 'layout.twig' %}
 
 {% block feature %}
@@ -12,6 +10,8 @@
 
 {% block content %}
   <h1 id="page-title">{{term.name}}</h1>
+
+  {#{term.get_field('categories_fields')|print_r}#}
 
   {% if term.categories_fields %}
     <div class="box-category-image">

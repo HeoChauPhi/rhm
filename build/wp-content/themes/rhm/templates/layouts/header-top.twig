@@ -1,7 +1,9 @@
+{% if header_widget|length != 1 %}
 <div class="header__top">
   <div class="container-wide container">
-  {% for key, footer in header_widget %}
-    {{acfwidget('header_blocks', 'header_widget-' ~ key )}}
+  {% for key, header in header_widget %}
+    {{acfwidget('header_top_blocks', 'header_widget-' ~ key )}}
   {% endfor %}
   </div>
 </div>
+{% endif %}
