@@ -84,3 +84,18 @@
     margin-top: 15px;
   }
 }
+
+.box-hotline {
+  display: flex;
+  justify-content: flex-end;
+
+  .title {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  span.content p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
