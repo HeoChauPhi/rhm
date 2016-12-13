@@ -171,12 +171,17 @@ function flexible_content($name) {
 
   global $post;
 
-  //print_r($post);
-
-  $fc = get_field( $name, $post->ID );
   $fc_ob = get_field_object( $name, $post->ID );
 
-  //print_r($fc);
+  if (is_archive()){
+    $queried_object = get_queried_object();
+    $term_id = $queried_object->term_id;
+    $fc = get_field($name, 'term_' . $term_id);
+  } else {
+    $fc = get_field( $name, $post->ID );
+  }
+
+  print_r($fc);
   //print_r($fc_ob);
 
   if ( !empty( $fc ) ) {
