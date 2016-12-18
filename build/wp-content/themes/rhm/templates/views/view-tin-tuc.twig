@@ -1,0 +1,38 @@
+{% if ( use_pagination == '1' ) and ( pagination_type == 'ajax' ) %}
+  {% set ajax_views = 'ajax_views' %}
+{% endif %}
+
+<div class="views {{ ajax_views }} tin-tuc-list">
+   <div class="tin-tuc">
+      {% for post in posts %}
+        <div class="{{post.class|join(" ")}}  tin-tuc-item">
+            {% if post.thumbnail.src %}
+            <div class="tin-tuc__img">
+              <a href="{{post.link}}"><img src="{{post.thumbnail.src}}" class="feature" /></a>
+            </div>
+            {% endif %}
+          <div class="tin-tuc--content">
+            <div class="tin-tuc__date">
+              <span class="teaser-list__date none-lable"><span class="lable">ngay dang: </span>{{ post.post_date|date('d.m.Y')}}</span>
+            </div>
+            <div class="tin-tuc__title">
+              <h3><a href="{{post.link}}">{{post.title}}</a></h3>
+            </div>
+            <div class="tin-tuc__body">
+              <p>{{post.content|excerpt(30)}}</p>
+            </div>
+            <div class="tin-tuc__links">
+              <a href=" {{post.link}} ">xem them</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+
+{% if use_pagination %}
+{% include 'pagination.twig' with {'pagedtype': pagination_type} %}
+{% endif %}
+
+
+

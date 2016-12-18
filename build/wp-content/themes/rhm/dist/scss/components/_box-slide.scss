@@ -9,6 +9,9 @@
    .box-slide-image {
     background-size: cover;
     line-height: 0;
+    min-height: 480px;
+    background-position: center;
+    background-repeat: no-repeat;
 
     img {
       height: rem(350px);

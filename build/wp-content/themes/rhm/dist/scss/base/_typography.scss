@@ -128,10 +128,11 @@ hr {
 }
 
 #page-title {
-  font-size: rem(30px);
-  margin-bottom: rem(13px);
+  font-size: 24px;
+  margin-bottom: 40px;
   margin-top: 0;
   text-transform: capitalize;
+  font-weight: bold;
 }
 
 
@@ -142,4 +143,18 @@ hr {
   text-transform: uppercase;
   color: $green;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.page-title {
+  padding: 30px 0 0;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.google-maps {
+    width: 100% !important;
 }

@@ -1,6 +1,6 @@
 {% for item in list_images %}
-<div>
-  <img src="{{ item.image_field.url }}">
+<div class="box-category-image__item">
+  <div class="box-category-image__item__images"><img src="{{ item.image_field.url }}"></div>
   <div>{{ item.image_label }}</div>
 </div>
 {% endfor %}

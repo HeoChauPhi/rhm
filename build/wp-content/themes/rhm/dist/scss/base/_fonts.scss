@@ -53,15 +53,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mail-envelope-closed:before {
+  content: "\e904";
+}
+
+.icon-map-marker:before {
+  content: "\e905";
+}
+
+.icon-phone:before {
+  content: "\e907";
+}
+
+.icon-eyedropper2:before {
+  content: "\e902";
+}
+
+.icon-flask2:before {
+  content: "\e903";
+}
+
+.icon-heart:before {
+  content: "\e906";
+}
+
 .icon-play_arrow:before {
   content: "\e901";
 }
+
 .icon-google:before {
   content: "\e900";
 }
+
 .icon-twitter:before {
   content: "\f099";
 }
+
 .icon-facebook:before {
   content: "\f09a";
 }

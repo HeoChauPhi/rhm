@@ -9,12 +9,104 @@
 
   &__item {
     margin-bottom: 15px;
+    position: relative;
+    padding-left: 50px;
+    min-height: 50px;
+    &:hover {
+
+      a {
+        &:before {
+          background-color: rgba(0, 0, 0, 0);
+          content: "";
+          height: 100%;
+          left: 0;
+          position: absolute;
+          right: 0;
+          width: 100%;
+        }
+      }
+
+      &:before {
+        background-color: $link-color;
+      }
+    }
+    &:before {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      /* ================ */
+
+        width: 40px;
+        height: 40px;
+        background: #ff7f66;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 200px;
+        color: $white;
+        font-size: 20px;
+        position: absolute;
+        left: 0;
+
+    }
+
+    &:nth-child(1) {
+      &:before {
+        content: "\e906";
+     }
+    }
+
+    &:nth-child(2) {
+      &:before {
+        content: "\e903";
+     }
+    }
+
+    &:nth-child(3) {
+      &:before {
+        content: "\e902";
+     }
+    }
+    &:nth-child(4) {
+      &:before {
+        content: "\e901";
+        background-color: transparent;
+        color: #ff7f66;
+        align-items: baseline;
+     }
+    }
+    &:nth-child(5) {
+      &:before {
+        content: "\e901";
+        background-color: transparent;
+        color: #ff7f66;
+        align-items: baseline;
+     }
+    }
   }
 
   &__title {
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
+    a {
+      color: $gray-33;
+
+      &:hover {
+        color: $link-color;
+      }
+    }
   }
 
   &_description {
@@ -27,12 +119,17 @@
 
   &__item {
     padding: 0 10px;
+    width: 33.333%;
   }
-
+ &__icon {
+  border-radius: 5px;
+  overflow: hidden;
+ }
   &__list {
     width: 60%;
     float: left;
     display: flex;
     padding-right: 30px;
+    flex-wrap: wrap;
   }
 }

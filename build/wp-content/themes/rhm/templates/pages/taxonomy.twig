@@ -18,6 +18,7 @@
       {{ flexible_content('categories_fields') }}
     </div>
   {% endif %}
-
+  <div class="teaser__list">
   {% include ["taxonomy-"~term.id~".twig", "taxonomy-"~term.taxonomy~".twig", 'taxonomy-tease.twig'] %}
+  </div>
 {% endblock %}

@@ -1,6 +1,11 @@
 {% block content %}
-  <h2 class="post-detail-title">{{ post.title }}</h2>
 
-  <div class="post-content">
+  <h2 class="post-detail-title">{{ post.title }}</h2>
+  <img src="{{ post.get_field('members_photo').url }}" />
+  <div class="member_positions">{{post.get_field("member_positions")}}</div>
+  <div class="member_email">{{post.get_field("member_email")}}</div>
+  <div class="member_phone">{{post.get_field("member_phone")}}</div>
+  <div class="member_content">
+    {{post.get_field("member_stories")}}
   </div>
 {% endblock %}
