@@ -1,2 +1,6 @@
-{{sidebar('sidebar-block')}}
-{{sidebar_widget|print_r}}
+{#{sidebar('sidebar-block')}}
+{{sidebar_widget|print_r}#}
+{% for key, header in sidebar_widget %}
+  {{acfwidget('sidebar_fields', 'sidebar_widget-' ~ key )}}
+  {{acfwidget('disable_this_widget_for', 'sidebar_widget-' ~ key )}}
+{% endfor %}
