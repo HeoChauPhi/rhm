@@ -1,0 +1,18 @@
+
+<div class="views {{ ajax_views }}">
+{% for post in posts %}
+
+  <div class="teaser-list">
+    {% if post.thumbnail.src %}
+    <div class="teaser-list__image">
+      <p><a href="{{post.link}}"><img src="{{post.thumbnail.src}}" class="feature" /></a></p>
+    </div>
+    {% endif %}
+    <div class="teaser-list__content">
+      <h3 class="post-title"> <a href="{{post.link}}">{{post.title}}</a></h3>
+      <p>{{post.content|excerpt(30)}}</p>
+    </div>
+  </div>
+
+{% endfor %}
+</div>

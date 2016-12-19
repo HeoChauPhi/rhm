@@ -60,6 +60,13 @@
       arrows : false,
       pauseOnHover: false,
     });
+
+      $(window).load(function(){
+      var $postlistmasonry = $('.tin-tuc');
+      $postlistmasonry.masonry({
+          itemSelector: '.tin-tuc-item'
+      });
+     });
   });
 
   $(window).load(function() {

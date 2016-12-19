@@ -16,6 +16,9 @@ require_once('init/options/option.php');
 if(!is_admin()) {
   // Add scripts
   function rhm_libs_scripts() {
+    wp_register_script('lib-masonry', get_stylesheet_directory_uri() . '/dist/js/libs/masonry.pkgd.min.js', array('jquery'), FALSE, '4.1.1', TRUE);
+    wp_enqueue_script('lib-masonry');
+
     wp_register_script('prettify', get_stylesheet_directory_uri() . '/dist/js/libs/prettify.js', array('jquery'), FALSE, '1.0.0', TRUE);
     wp_enqueue_script('prettify');
 
@@ -101,7 +104,7 @@ function rhm_create_custom_post_types() {
     'has_archive' => false,
     'menu_position' => 22,
     'rewrite' => array('slug' => 'specializeds'),
-    'supports' => array( 'title', 'editor'),
+    'supports' => array( 'title', 'editor', 'thumbnail'),
   ));
 
   // Schedule
@@ -114,7 +117,7 @@ function rhm_create_custom_post_types() {
     'has_archive' => false,
     'menu_position' => 23,
     'rewrite' => array('slug' => 'schedules'),
-    'supports' => array( 'title'),
+    'supports' => array( 'title', "editor"),
   ));
 }
 add_action( 'init', 'rhm_create_custom_post_types' );

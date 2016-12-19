@@ -1,14 +1,17 @@
 {% block content %}
   {% for post in term.get_posts({'posts_per_page': count, 'paged': paged}) %}
-    <article>
-      <h3><a href="{{post.link}}">{{ post.title }}</a></h3>
-      {{ post.content }}
-      <ul class="cat-list">
-      {% for term in post.terms() %}
-        <li><a href="{{term.link}}">{{term.name}}</a></li>
-      {% endfor %}
-      </ul>
-    </article>
+    <div class="teaser__item">
+      {% if post.thumbnail.src %}
+        <div class="teaser__item__images">
+         <img src="{{post.thumbnail.src}}" class="feature" />
+        </div>
+      {% endif %}
+      <div class="teaser__item__group">
+        <h3 class="teaser__title"><a href="{{post.link}}">{{ post.title }}</a></h3>
+        <div class="teaser__content">{{ post.content|excerpt(30) }}</div>
+        <div class="read-more"><a href="{{post.link}}">xem chi tiết</a></div>
+      </div>
+    </div>
   {% endfor %}
   {% include 'pagination.twig' %}
 {% endblock %}

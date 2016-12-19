@@ -1,6 +1,8 @@
 .footer {
   color: $white;
   font-size: 13px;
+  margin-top: 40px;
+
   h1,
   h2,
   h3 {
@@ -16,7 +18,7 @@
 
   &__top {
     background-color: $green;
-    padding: 40px 0 20px;
+    padding: 30px 0 35px;
 
     &-group {
       display: flex;
@@ -84,5 +86,11 @@
         margin-right: 3px;
       }
     }
+  }
+}
+
+.home {
+  .footer {
+    margin-top: 0;
   }
 }

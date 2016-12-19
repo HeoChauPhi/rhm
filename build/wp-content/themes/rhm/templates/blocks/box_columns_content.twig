@@ -1,0 +1,17 @@
+
+<div class="box-text-format">
+  <div class="container-wide">
+    <div class="box-columns__list">
+    {% for item in  columns_layout %}
+    <div class="box-teaser  box-columns box-column--one">
+      {{item.columns_content_first}}
+    </div>
+    <div class="box-columns box-columns--two">
+      {% if item.columns_content_seccond %}
+          <div class="col-sm-12"> {{ item.columns_content_seccond }} </div>
+      {% endif %}
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>

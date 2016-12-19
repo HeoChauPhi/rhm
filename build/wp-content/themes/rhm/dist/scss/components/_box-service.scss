@@ -5,10 +5,14 @@
     &__list {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
   &__group {
     padding: 0 rem(22px);
+  }
+  &__item {
+    width: 33.333%;
   }
 
   &__icon {
@@ -17,12 +21,15 @@
     line-height: 0;
     width: 250px;
     margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__title {
-    color: #666;
-    margin-bottom: rem(15px);
-    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 0.9375rem;
+    text-transform: capitalize;
+    font-size: 18px;
   }
 
   &__description {

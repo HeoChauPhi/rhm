@@ -9,6 +9,7 @@
 {% endblock %}
 
 {% block content %}
+
   {% for post in posts %}
     {% include ["single-"~post.post_name~".twig", "single-"~post.post_type~".twig", 'tease.twig'] %}
   {% endfor %}

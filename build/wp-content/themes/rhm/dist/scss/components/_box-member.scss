@@ -1,14 +1,19 @@
 .box-member {
   text-align: center;
   &-wrap {
-    padding: rem(62px) 0 rem(40px);
+    padding: rem(10px) 0 rem(60px);
   }
 
   &__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
+  &__item {
+    width: 33.333%;
+    margin-bottom: 40px;
+  }
 
   &__image {
     line-height: 0;
@@ -23,7 +28,8 @@
   &__name {
     font-size: rem(16px);
     margin-bottom: 0;
-    font-weight: 300;
+    font-weight: 600;
+    text-transform: capitalize;
   }
 
   &__position {
