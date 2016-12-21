@@ -89,13 +89,13 @@ $susy-media: (
   //max-width: 640px
   mobileLargeOnly: (
     media: screen,
-    max-width: em($mobile-large - 1) * 1em,
+    max-width: em($mobile-large) * 1em,
   ),
 
   // max-width: 768px
   mobileOnly: (
     media: screen,
-    max-width: em($tablet - 1) * 1em,
+    max-width: em($tablet) * 1em,
   ),
 
   // max-width: 959px

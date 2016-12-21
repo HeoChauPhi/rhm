@@ -1,0 +1,11 @@
+{% block content %}
+  <h2 class="post-detail-title">{{ post.title }}</h2>
+  <div class="post-content">
+    {{ post.content|shortcodes }}
+    {{ flexible_content('table_lich') }}
+  </div>
+  {% if function('comments_open') %}
+  {% include 'comments.twig' %}
+  {{ function('comment_form') }}
+  {% endif %}
+{% endblock %}

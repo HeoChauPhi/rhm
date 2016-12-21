@@ -1,6 +1,8 @@
 <div id="header-navigation" class="header__navigation">
+
   <nav class="nav main-menu">
-    <ul>
+    <a class="toggle-nav" href="#"><span class="icon-responsive-menu">&#9776;</span></a>
+    <ul class="toggle-nav-mainmenu">
       {% include 'menu.twig' with {'menu': menu.main} %}
     </ul>
   </nav>

@@ -61,12 +61,19 @@
       pauseOnHover: false,
     });
 
+    $('.toggle-nav').click(function(e) {
+      $(this).toggleClass('active');
+      $('.toggle-nav-mainmenu').toggleClass('active');
+      e.preventDefault();
+    });
+
       $(window).load(function(){
       var $postlistmasonry = $('.tin-tuc');
       $postlistmasonry.masonry({
           itemSelector: '.tin-tuc-item'
       });
      });
+
   });
 
   $(window).load(function() {

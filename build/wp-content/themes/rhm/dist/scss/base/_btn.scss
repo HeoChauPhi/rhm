@@ -1,5 +1,6 @@
 // Button
-.btn {
+.btn,
+.wpcf7-submit {
   color: $primary-color;
   &,
   &:focus,
@@ -8,5 +9,30 @@
 
   &:active,
   &:hover {
+  }
+
+  background: #ff7f66;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.contact {
+  .wpcf7-submit {
+    background: #ff7f66;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: auto;
+    cursor: pointer;
+
+    &:hover {
+      background: $link-color;
+    }
   }
 }

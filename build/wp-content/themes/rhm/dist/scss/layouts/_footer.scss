@@ -23,11 +23,24 @@
     &-group {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     &__item {
       width: 33.333%;
       padding: 0 15px;
+
+      @media screen and (max-width: 630px) {
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 0;
+      }
+
+      @include susy-media(mobiletinyOnly) {
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 0;
+      }
     }
   }
 

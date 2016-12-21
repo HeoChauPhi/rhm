@@ -12,17 +12,18 @@
             </div>
             {% endif %}
           <div class="tin-tuc--content">
-            <div class="tin-tuc__date">
-              <span class="teaser-list__date none-lable"><span class="lable">ngay dang: </span>{{ post.post_date|date('d.m.Y')}}</span>
-            </div>
             <div class="tin-tuc__title">
               <h3><a href="{{post.link}}">{{post.title}}</a></h3>
+            </div>
+
+            <div class="tin-tuc__date">
+              <span class="teaser-list__date none-lable"><span class="lable">đăng ngày: </span>{{ post.post_date|date('d-m-Y')}}</span>
             </div>
             <div class="tin-tuc__body">
               <p>{{post.content|excerpt(30)}}</p>
             </div>
             <div class="tin-tuc__links">
-              <a href=" {{post.link}} ">xem them</a>
+              <a href=" {{post.link}} ">Xem chi tiết</a>
             </div>
           </div>
         </div>

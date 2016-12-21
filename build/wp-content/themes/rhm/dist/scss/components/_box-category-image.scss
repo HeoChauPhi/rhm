@@ -1,7 +1,7 @@
 .box-category-image {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 30px;
   text-align: center;
 
@@ -23,6 +23,9 @@
     .box-category-image__item__images {
       height: 250px;
       overflow: hidden;
+      @include susy-media(mobileOnly) {
+        height: auto;
+      }
     }
   }
 }

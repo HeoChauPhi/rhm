@@ -13,6 +13,10 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    @include susy-media(mobileOnly) {
+      min-height: auto;
+    }
+
     img {
       height: rem(350px);
       opacity: 0;
@@ -23,14 +27,22 @@
 
   &__title {
     color: $white;
-    font-size: rem(48px);
+    font-size: rem(30px);
     left: 50%;
     line-height: 1.17;
     min-width: rem(800px);
     position: absolute;
     text-align: center;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .6);
+    bottom: 30px;
+    font-weight: bold;
+    @include susy-media(mobileOnly) {
+      min-width: rem(270px);
+      font-size: 12px;
+    }
   }
 }
 
