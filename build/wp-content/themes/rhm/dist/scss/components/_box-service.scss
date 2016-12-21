@@ -2,6 +2,10 @@
   text-align: center;
   margin-bottom: rem(90px);
 
+  @include susy-media(mobileOnly) {
+    margin-bottom: rem(20px);
+  }
+
     &__list {
       display: flex;
       justify-content: space-between;
@@ -13,6 +17,13 @@
   }
   &__item {
     width: 33.333%;
+
+    @include susy-media(mobileLargeOnly) {
+      width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    }
   }
 
   &__icon {
@@ -23,6 +34,18 @@
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
+    height: 250px;
+
+    @include susy-media(mobileLargeOnly) {
+      width: 227px;
+      height: 227px;
+      margin-top: 10px;
+      max-width: 100%;
+    }
+    @include susy-media(mobileOnly) {
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &__title {

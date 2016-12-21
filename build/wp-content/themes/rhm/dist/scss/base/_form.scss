@@ -46,3 +46,44 @@ input[type='submit'] {
   text-indent: rem(-9999px);
   width: rem(24px);
 }
+
+.contact {
+  &__title {
+    margin-bottom: 20px;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 250px;
+    font-style: italic;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: #eee;
+    }
+  }
+
+  textarea {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 14px;
+    font-style: italic;
+    padding: 5px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: #eee;
+    }
+  }
+}

@@ -11,10 +11,17 @@
     margin-bottom: 28px;
     padding: 0 10px;
     width: 33%;
+
+    @include susy-media(mobileLargeOnly) {
+      width: 100%;
+      float: none;
+    }
   }
 
   &__img {
     line-height: 0;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
     img {
       width: 100%;
     }
@@ -23,6 +30,8 @@
   &--content {
     padding: 18px 20px 20px;
     background: #e3ffd6;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
   }
 
   &__date {
@@ -40,6 +49,17 @@
       font-size: 18px;
       margin-bottom: 0;
       text-transform: capitalize;
+      font-weight: bold;
+      line-height: 20px;
+      margin-bottom: 15px;
+
+      a {
+        color: #333;
+
+        &:hover {
+          color: $link-color;
+        }
+      }
     }
   }
 
@@ -64,6 +84,13 @@
       margin-left: 5px;
     }
   }
+
+.teaser-list__date.none-lable {
+  font-size: 16px;
+  font-style: italic;
+  color: red;
+  opacity: 0.6;
+}
 }
 
 

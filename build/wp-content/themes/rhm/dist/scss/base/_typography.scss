@@ -16,6 +16,10 @@ h1 {
 
 h2 {
   font-size: rem(24px);
+
+  @include susy-media(mobileLargeOnly) {
+    font-size: 18px;
+  }
 }
 
 h3 {
@@ -133,6 +137,12 @@ hr {
   margin-top: 0;
   text-transform: capitalize;
   font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+
+  @include susy-media(mobileLargeOnly) {
+    font-size: 18px;
+  }
 }
 
 
@@ -146,6 +156,12 @@ hr {
   margin-top: 40px;
   margin-bottom: 50px;
   font-weight: bold;
+
+  @include susy-media(mobileOnly) {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .page-title {
@@ -154,7 +170,22 @@ hr {
   font-weight: bold;
   margin-bottom: 0;
   text-transform: uppercase;
+
+  @include susy-media(mobileLargeOnly) {
+    font-size: 18px;
+  }
 }
 .google-maps {
     width: 100% !important;
+}
+
+h2.post-detail-title {
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.read-more {
+  text-transform: capitalize;
+  font-style: italic;
 }

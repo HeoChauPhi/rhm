@@ -24,19 +24,7 @@ body {
   // @include show-breakpoints;
   text-size-adjust: none;
   @include arial;
-}
-
-.box-feature_banner_image {
-  position: relative;
-}
-h1.banner-heightline-text {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 9;
-  text-transform: capitalize;
-  transform: translate(-50%, -50%);
+  color: #333;
 }
 
 .home {

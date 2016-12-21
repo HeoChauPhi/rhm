@@ -1,11 +1,29 @@
 {% block content %}
 
-  <h2 class="post-detail-title">{{ post.title }}</h2>
-  <img src="{{ post.get_field('members_photo').url }}" />
-  <div class="member_positions">{{post.get_field("member_positions")}}</div>
-  <div class="member_email">{{post.get_field("member_email")}}</div>
-  <div class="member_phone">{{post.get_field("member_phone")}}</div>
-  <div class="member_content">
-    {{post.get_field("member_stories")}}
+  {% if  post.get_field('members_photo').url %}
+    <div class="single-member__image">
+      <img src="{{ post.get_field('members_photo').url }}" />
+    </div>
+  {% endif %}
+  <div class="single-member__body">
+    <h2 class="post-detail-title">{{ post.title }}</h2>
+    {% if post.get_field("member_positions") %}
+    <div class="member_positions"><span class="lable"><b>chức vụ:</b></span>{{post.get_field("member_positions")}}</div>
+    {% else %}
+      <div class="member_positions"><span class="lable"><b>chức vụ:</b></span>đang cập nhật</div>
+    {% endif %}
+    {% if post.get_field("member_email") %}
+    <div class="member_email"><span class="lable"><b>Email:</b></span>{{post.get_field("member_email")}}</div>
+    {% else %}
+      <div class="member_email"><span class="lable"><b>Email:</b></span>đang cập nhật</div>
+    {% endif %}
+    {% if post.get_field("member_phone") %}
+    <div class="member_phone"><span class="lable"><b>Phone number:</b></span>{{post.get_field("member_phone")}}</div>
+    {% else %}
+    <div class="member_phone"><span class="lable"><b>Phone number:</b></span>đang cập nhật</div>
+    {% endif %}
+    <div class="member_content">
+      {{post.get_field("member_stories")}}
+    </div>
   </div>
 {% endblock %}

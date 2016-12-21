@@ -1,4 +1,10 @@
 <div class="box-{{ acf_fc_layout }}">
-  <img src="{{ banner_image.url }}">
-  <h1 class="banner-heightline-text">{{ banner_description }}</h1>
+  {%  if banner_image %}
+    <div class="box-feature_banner_image__image" style="background-image: url('{{banner_image.url}}')">
+      <img src="{{ banner_image.url }}">
+    </div>
+  {% endif %}
+  {%  if banner_description %}
+    <h1 class="banner-heightline-text">{{ banner_description }}</h1>
+  {% endif %}
 </div>
