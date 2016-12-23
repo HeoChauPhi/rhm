@@ -1,8 +1,5 @@
 {% block content %}
   <h2 class="post-detail-title">{{ post.title }}</h2>
-  <p class="blog-author">
-    <span class="post-date">đăng ngày: {{ post.post_date|date('y/m/d')}}</span> | Người  Đăng: <a class="post-author" href="{{post.author.path}}"> {{ post.author.name }} </a>
-  </p>
   {% if post.thumbnail.src %}
   <div class="post-picture">
     <img src="{{post.thumbnail.src}}" class="feature" />
@@ -25,11 +22,17 @@
   </div>
   {% endif %}
 
+  <p class="blog-author">
+    <span class="post-date">đăng ngày: {{ post.post_date|date('y/m/d')}}</span> | Người  Đăng: <a class="post-author" href="{{post.author.path}}"> {{ post.author.name }} </a>
+  </p>
   {% if related('category') %}
     <h3 class="related-title block-title">Bài Viết Liên Quan</h3>
-    <ul class="post-related">
+    <div class="post-related">
       {% for post in related('category') %}
-        <li><a href="{{post.link}}">{{post.title}}</a></li>
+        <div class="post-related__item">
+          <div class="post-related__images" style="background-image: url('{{post.thumbnail.src}}')"><a href="{{post.link}}"><img src="{{post.thumbnail.src}}" class="feature" /></a></div>
+          <h3 class="post-related__title"><a href="{{post.link}}">{{post.title}}</a></h3>
+        </div>
       {% endfor %}
     </ul>
   {% endif %}

@@ -54,11 +54,35 @@
   $(document).ready(function() {
     $('.ajax-pagination .pager-item a').on('click', pagination_ajax);
     $(".box-slide").slick({
-      autoplay: false,
-      autoplaySpeed: 2000,
+      autoplay: true,
+      autoplaySpeed: 3000,
       dots: true,
       arrows : false,
       pauseOnHover: false,
+    });
+
+    $(".post-related").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      dots: false,
+      arrows : false,
+      pauseOnHover: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
 
     $('.toggle-nav').click(function(e) {
