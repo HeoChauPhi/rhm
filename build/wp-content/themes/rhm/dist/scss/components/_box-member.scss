@@ -51,6 +51,14 @@
     margin-bottom: 0;
     font-weight: 600;
     text-transform: capitalize;
+
+    a {
+      color: $gray-33;
+
+      &:hover {
+        color: $link-color;
+      }
+    }
   }
 
   &__position {

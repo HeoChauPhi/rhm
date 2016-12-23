@@ -131,6 +131,12 @@
   }
 
   &__title {
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+
     @include susy-media(mobiletinyOnly) {
       font-size: 14px;
     }
