@@ -67,7 +67,7 @@
                                 }
                             ],
                             "min": "",
-                            "max": 3,
+                            "max": "",
                             "button_label": "Add Images",
                             "key": "field_584b88ef1f2df",
                             "label": "List Images",
@@ -121,5 +121,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1481346093
+    "modified": 1482678807
 }
