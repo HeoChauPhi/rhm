@@ -38,6 +38,7 @@
     "wpackagist-plugin/stops-core-theme-and-plugin-updates" : "6.2.9",
     "wpackagist-plugin/tablepress" : "1.7",
     "wpackagist-plugin/contact-form-7" : "4.6",
-    "wpackagist-plugin/tinymce-advanced" : "4.4.3"
+    "wpackagist-plugin/tinymce-advanced" : "4.4.3",
+    "wpackagist-plugin/visual-term-description-editor" : "1.5.0"
   }
 }
