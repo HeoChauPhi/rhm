@@ -21,6 +21,11 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 switch ($_SERVER['HTTP_HOST']) {
+  case 'ranghammatnhitw.vn':
+    $config_file = 'wp-config/wp-config.ranghammatnhitw.php';
+    //define('WP_CACHE', true); //Added by WP-Cache Manager
+    break;
+
   case 'dev-rhm-site.pantheonsite.io':
     $config_file = 'wp-config/wp-config.pantheonsite.php';
     //define('WP_CACHE', true); //Added by WP-Cache Manager
