@@ -15,12 +15,18 @@
 
     @include susy-media(mobileOnly) {
       min-height: auto;
+      background-size: auto 100%;
+      background-position: 0 0;
+      height: auto;
     }
 
     img {
       height: rem(350px);
       opacity: 0;
       width: 100%;
+      @include susy-media(mobileOnly) {
+        height: 200px;
+      }
     }
    }
   }
