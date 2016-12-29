@@ -85,6 +85,16 @@
       ]
     });
 
+    $("#hisella-minimize").click(function(e) {
+      if($(this).find('span').hasClass('icon-circle-down')){
+        $(this).find('span').removeClass('icon-circle-down').addClass('icon-circle-up');
+      }
+      else {
+        $(this).find('span').removeClass('icon-circle-up').addClass('icon-circle-down');
+      }
+
+    });
+
     $('.toggle-nav').click(function(e) {
       $(this).toggleClass('active');
       $('.toggle-nav-mainmenu').toggleClass('active');
@@ -97,7 +107,6 @@
           itemSelector: '.tin-tuc-item'
       });
      });
-
   });
 
   $(window).load(function() {
@@ -107,4 +116,6 @@
   $(window).resize(function() {
     // Call to function
   });
+
 })(jQuery);
+

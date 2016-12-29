@@ -1,18 +1,21 @@
 
 <div class="views {{ ajax_views }}">
+  <div class="teaser__list">
 {% for post in posts %}
-
-  <div class="teaser-list">
+  <div class="teaser__item js-equalheight-item">
     {% if post.thumbnail.src %}
-    <div class="teaser-list__image">
-      <p><a href="{{post.link}}"><img src="{{post.thumbnail.src}}" class="feature" /></a></p>
+    <div class="teaser__top">
+      <div class="teaser-list__image teaser__image">
+        <p><a href="{{post.link}}"><img src="{{post.thumbnail.src}}" class="feature" /></a></p>
+      </div>
     </div>
     {% endif %}
-    <div class="teaser-list__content">
-      <h3 class="post-title"> <a href="{{post.link}}">{{post.title}}</a></h3>
-      <p>{{post.content|excerpt(30)}}</p>
+    <div class="teaser-list__content teaser__bottom js-equalheight-content">
+      <h4 class="post-title teaser__title"> <a href="{{post.link}}">{{post.title}}</a></h4>
+      <div class="teaser__body hide-on-mobile"><p>{{post.content|excerpt(30)}}</p></div>
     </div>
   </div>
 
 {% endfor %}
+</div>
 </div>

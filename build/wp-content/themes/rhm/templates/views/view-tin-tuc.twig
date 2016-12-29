@@ -3,7 +3,7 @@
 {% endif %}
 
 <div class="views {{ ajax_views }} tin-tuc-list">
-   <div class="tin-tuc">
+   <div class="tin-tuc ">
       {% for post in posts %}
         <div class="{{post.class|join(" ")}}  tin-tuc-item">
             {% if post.thumbnail.src %}

@@ -35,7 +35,8 @@
                             "choices": {
                                 "views": "Default Template",
                                 "member": "Member",
-                                "tin-tuc": "Tin tuc"
+                                "tin-tuc": "Tin tuc",
+                                "tintuchome": "abcd"
                             },
                             "default_value": [],
                             "ui": 0,
@@ -1103,5 +1104,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1482029710
+    "modified": 1482942531
 }

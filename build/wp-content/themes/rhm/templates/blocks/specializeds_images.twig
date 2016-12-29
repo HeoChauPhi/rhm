@@ -1,4 +1,5 @@
 {% for item in list_images %}
+  {{imt|print_r}}
 <div class="box-category-image__item">
   <div class="box-category-image__item__images"><img src="{{ item.image_field.url }}"></div>
   <div>{{ item.image_label }}</div>
