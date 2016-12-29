@@ -7,8 +7,20 @@
       {% for item in activities_images %}
         <div class="category-banner__item">
           <div class="category-banner__group">
-            <div class="category-banner__icon"><img src="{{ item.activities_image.url }}"></div>
-            <h5 class="category-banner__title"> {{ item.activities_title }} </h5>
+            <div class="category-banner__icon">
+              {% if item.activities_link_to_content %}
+              <a href="{{item.activities_link_to_content}}"><img src="{{item.activities_image.url}}"></a>
+              {% else %}
+                <img src="{{item.activities_image.url}}">
+              {% endif %}
+            </div>
+            <h5 class="category-banner__title">
+              {% if item.activities_link_to_content %}
+                <a href="{{item.activities_link_to_content}}">{{ item.activities_title }}</a>
+              {% else %}
+                {{ item.activities_title }}
+              {% endif %}
+            </h5>
           </div>
         </div>
       {% endfor %}

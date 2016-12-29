@@ -24,6 +24,12 @@
     margin-bottom: 15px;
     border-radius: 3px;
     }
+
+    &:hover {
+      a {
+        color: $link-color;
+      }
+    }
   }
 
   &__icon {

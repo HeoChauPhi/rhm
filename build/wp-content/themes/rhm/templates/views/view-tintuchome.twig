@@ -1,0 +1,20 @@
+<div class="teaser__list">
+{% for post in posts %}
+  <div class="teaser__item js-equalheight-item">
+    <div class="teaser__top">
+      {% if post.thumbnail.src %}
+      <div class="teaser__image">
+        <a href="{{post.link}}"><img src="{{post.thumbnail.src}}" height="274" width="100%"></a>
+      </div>
+      {% endif %}
+    </div>
+    <div class="teaser__bottom js-equalheight-content">
+      <h4 class="teaser__title"><a href="{{post.link}}">{{post.title}}</a></h4>
+      <div class="teaser__body hide-on-mobile">
+        {{post.content|excerpt(30)}}
+      </div>
+      <div class="teaser__post-date hide-all-device"><i class="icon-schedule"></i>{{post.post_date|date("d - m - Y")}}</div>
+    </div>
+  </div>
+{% endfor %}
+</div>
