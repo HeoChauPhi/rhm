@@ -1,11 +1,13 @@
 {% block content %}
+  {{post.get_field('component_filed_lich')|print_r}}
   <h2 class="post-detail-title">{{ post.title }}</h2>
   <div class="post-content">
     {{ post.content|shortcodes }}
-    {{ flexible_content('table_lich') }}
+    <a href="{{ post.get_field('component_filed_lich').url }}"> <img src="{{ post.get_field('component_filed_lich').icon }}" alt=""> xem lick</a>
   </div>
   {% if function('comments_open') %}
   {% include 'comments.twig' %}
   {{ function('comment_form') }}
   {% endif %}
 {% endblock %}
+
