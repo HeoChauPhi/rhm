@@ -123,3 +123,65 @@ function rhm_view_tax_terms($attrs) {
   return $content;
   wp_reset_postdata();
 }
+
+// Ovride Counter Per Day plugin, shortcode for counter perday in http://www.tomsdimension.de/wp-plugins/count-per-day#readme-arbitrary
+add_shortcode( 'rhm_count_per_day', 'create_rhm_count_per_day' );
+function create_rhm_count_per_day() {
+  ob_start();
+    $context = Timber::get_context();
+    try {
+    Timber::render('box-count_per_day.twig', $context );
+    } catch (Exception $e) {
+      echo 'Could not find a twig file for Shortcode Name: box-count_per_day';
+    }
+
+    $content = ob_get_contents();
+  ob_end_clean();
+  return $content;
+  wp_reset_postdata();
+}
+
+// Share this page
+add_shortcode( 'rhm_share_this', 'create_rhm_share_this' );
+function create_rhm_share_this($attrs) {
+  extract(shortcode_atts (array(
+  ), $attrs));
+
+  ob_start();
+    /*global $wp;
+    $current_url = home_url(add_query_arg(array(),$wp->request));*/
+    $current_url = get_permalink();
+
+    $theme_options = get_option('rhm_board_settings');
+    $facebook   = $theme_options['rhm_facebook_social'];
+    $googleplus = $theme_options['rhm_googleplus_social'];
+    $twitter    = $theme_options['rhm_twitter_social'];
+
+    $context = Timber::get_context();
+
+    if( $facebook ) {
+      //$context['facebook'] = 'http://www.facebook.com/sharer/sharer.php?u=' . $current_url;
+      $context['facebook'] = 'href="https://www.facebook.com/sharer/sharer.php?u=' . $current_url . '&t=TITLE" onclick="javascript:window.open(this.href, \'\', \'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600\');return false;" target="_blank" title="Share on Facebook"';
+    }
+
+    if( $twitter ) {
+      //$context['twitter'] = 'http://www.facebook.com/sharer/sharer.php?u=' . $current_url;
+      $context['twitter'] = 'href="https://twitter.com/share?url=' . $current_url . '&via=TWITTER_HANDLE&text=TEXT" onclick="javascript:window.open(this.href, \'\', \'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600\');return false;" target="_blank" title="Share on Twitter"';
+    }
+
+    if( $googleplus ) {
+      //$context['googleplus'] = 'http://www.facebook.com/sharer/sharer.php?u=' . $current_url;
+      $context['googleplus'] = 'href="https://plus.google.com/share?url=' . $current_url . '" onclick="javascript:window.open(this.href, \'\', \'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=480\');return false;" target="_blank" title="Share on Google+"';
+    }
+
+    try {
+    Timber::render('box-share-this.twig', $context );
+    } catch (Exception $e) {
+      echo 'Could not find a twig file for Shortcode Name: box-share-this';
+    }
+
+    $content = ob_get_contents();
+  ob_end_clean();
+  return $content;
+  wp_reset_postdata();
+}
