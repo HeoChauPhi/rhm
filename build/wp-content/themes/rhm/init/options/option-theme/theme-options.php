@@ -99,7 +99,7 @@ class RHMSettingsPage {
   * Print the Section text
   */
   public function rhm_print_section_info() {
-    echo __("", 'rhm');
+    echo __("Use shortcode [rhm_share_this]", 'rhm');
   }
 
   /**
