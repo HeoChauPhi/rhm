@@ -3,14 +3,22 @@
   <div class="container-wide">
     <div class="box-columns__list">
     {% for item in  columns_layout %}
-    <div class="box-teaser  box-columns box-column--one">
-      {{item.columns_content_first}}
-    </div>
-    <div class="box-columns box-columns--two">
-      {% if item.columns_content_seccond %}
-          <div class="col-sm-12"> {{ item.columns_content_seccond }} </div>
+      {% if item.columns_content_third %}
+        <div class="box-teaser  box-columns box-column--one col-4">
+          {{item.columns_content_first}}
+        </div>
+        <div class="box-columns box-columns--two col-4">
+          {% if item.columns_content_seccond %}
+            <div class="col-sm-12"> {{ item.columns_content_seccond }} </div>
+          {% endif %}
+          </div>
+
+        <div class="box-columns box-columns--third col-4">
+          {% if item.columns_content_third %}
+            <div class="col-sm-12"> {{ item.columns_content_third }} </div>
+          {% endif %}
+        </div>
       {% endif %}
-      </div>
     {% endfor %}
     </div>
   </div>

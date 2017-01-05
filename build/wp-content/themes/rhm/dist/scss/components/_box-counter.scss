@@ -1,0 +1,58 @@
+.box-counter {
+  margin-bottom: 30px;
+  .counter-list {
+    label {
+      display: inline;
+    }
+  }
+}
+
+//share this
+.box-share-this {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background: #009688;
+  border-radius: 4px;
+  padding: 10px 5px;
+
+  h2 {
+    font-size: 14px !important;
+    font-weight: bold;
+    text-transform: capitalize !important;
+  }
+
+  a {
+    color: transparent;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &:before {
+      color: #fff;
+      background: blue;
+      font-size: 25px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px 1px 2px 1px inset;
+      line-height: 0;
+      border-radius: 2px;
+    }
+
+    &.googleplus {
+      &:before {
+        background: #DB4437;
+      }
+    }
+    &.twitter {
+      &:before {
+        background: #009CF1;
+      }
+    }
+  }
+}

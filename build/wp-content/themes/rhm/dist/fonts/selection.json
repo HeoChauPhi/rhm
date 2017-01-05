@@ -4,6 +4,44 @@
     {
       "icon": {
         "paths": [
+          "M768 770.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z",
+          "M327.196 795.328c55.31-36.15 124.080-63.636 199.788-80.414-15.054-17.784-28.708-37.622-40.492-59.020-30.414-55.234-46.492-116.058-46.492-175.894 0-86.042 0-167.31 30.6-233.762 29.706-64.504 83.128-104.496 159.222-119.488-16.914-76.48-61.94-126.75-181.822-126.75-192 0-192 128.942-192 288 0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h279.006c14.518-12.91 30.596-25.172 48.19-36.672z"
+        ],
+        "attrs": [
+          {},
+          {}
+        ],
+        "width": 1152,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "users",
+          "group",
+          "team",
+          "members",
+          "community",
+          "collaborate"
+        ],
+        "grid": 16
+      },
+      "attrs": [
+        {},
+        {}
+      ],
+      "properties": {
+        "order": 71,
+        "id": 14,
+        "prevSize": 32,
+        "name": "users",
+        "code": 59659
+      },
+      "setIdx": 0,
+      "setId": 4,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M1024 512c0-282.77-229.23-512-512-512s-512 229.23-512 512 229.23 512 512 512 512-229.23 512-512zM96 512c0-229.75 186.25-416 416-416s416 186.25 416 416-186.25 416-416 416-416-186.25-416-416z",
           "M317.256 354.744l-90.512 90.512 285.256 285.254 285.254-285.256-90.508-90.508-194.746 194.744z"
         ],
@@ -26,7 +64,7 @@
         {}
       ],
       "properties": {
-        "order": 56,
+        "order": 72,
         "id": 12,
         "prevSize": 32,
         "name": "circle-down",
@@ -34,7 +72,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 0
+      "iconIdx": 1
     },
     {
       "icon": {
@@ -61,7 +99,7 @@
         {}
       ],
       "properties": {
-        "order": 57,
+        "order": 73,
         "id": 13,
         "prevSize": 32,
         "name": "circle-up",
@@ -69,7 +107,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 1
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -93,7 +131,7 @@
         {}
       ],
       "properties": {
-        "order": 64,
+        "order": 80,
         "id": 6,
         "prevSize": 32,
         "name": "heart",
@@ -101,7 +139,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 8
+      "iconIdx": 9
     },
     {
       "icon": {
@@ -122,7 +160,7 @@
         {}
       ],
       "properties": {
-        "order": 58,
+        "order": 74,
         "id": 11,
         "prevSize": 24,
         "name": "schedule",
@@ -130,7 +168,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 2
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -151,7 +189,7 @@
         {}
       ],
       "properties": {
-        "order": 65,
+        "order": 81,
         "id": 7,
         "prevSize": 24,
         "name": "play_arrow",
@@ -159,7 +197,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 9
+      "iconIdx": 10
     },
     {
       "icon": {
@@ -180,7 +218,7 @@
         {}
       ],
       "properties": {
-        "order": 60,
+        "order": 75,
         "id": 1,
         "name": "mail-envelope-closed",
         "prevSize": 32,
@@ -188,7 +226,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 3
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -210,7 +248,7 @@
         {}
       ],
       "properties": {
-        "order": 59,
+        "order": 76,
         "id": 2,
         "prevSize": 28,
         "name": "map-marker",
@@ -218,7 +256,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 4
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -240,7 +278,7 @@
         {}
       ],
       "properties": {
-        "order": 61,
+        "order": 77,
         "id": 3,
         "prevSize": 28,
         "name": "phone",
@@ -248,7 +286,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 5
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -270,7 +308,7 @@
         {}
       ],
       "properties": {
-        "order": 69,
+        "order": 78,
         "id": 4,
         "prevSize": 28,
         "name": "eyedropper2",
@@ -278,7 +316,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 6
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -300,7 +338,7 @@
         {}
       ],
       "properties": {
-        "order": 63,
+        "order": 79,
         "id": 5,
         "prevSize": 28,
         "name": "flask2",
@@ -308,7 +346,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 7
+      "iconIdx": 8
     },
     {
       "icon": {
@@ -329,7 +367,7 @@
         {}
       ],
       "properties": {
-        "order": 66,
+        "order": 82,
         "id": 8,
         "prevSize": 20,
         "name": "google",
@@ -337,7 +375,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 10
+      "iconIdx": 11
     },
     {
       "icon": {
@@ -356,7 +394,7 @@
       "attrs": [],
       "properties": {
         "id": 9,
-        "order": 67,
+        "order": 83,
         "ligatures": "",
         "prevSize": 32,
         "name": "twitter",
@@ -364,7 +402,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 11
+      "iconIdx": 12
     },
     {
       "icon": {
@@ -383,7 +421,7 @@
       "attrs": [],
       "properties": {
         "id": 10,
-        "order": 68,
+        "order": 84,
         "ligatures": "",
         "prevSize": 32,
         "name": "facebook",
@@ -391,7 +429,7 @@
       },
       "setIdx": 0,
       "setId": 4,
-      "iconIdx": 12
+      "iconIdx": 13
     }
   ],
   "height": 1024,

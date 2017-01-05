@@ -1,0 +1,19 @@
+.box-teaser.box-columns.box-column--one.col-4 {
+  padding-right: 0;
+  width: 25% !important;
+
+  @include susy-media(mobileOnly) {
+    width: 100% !important;
+  }
+}
+.col-4 {
+  width: 37.5% !important;
+
+  @include susy-media(mobileOnly) {
+    width: 100% !important;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+}

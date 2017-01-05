@@ -90,10 +90,9 @@
 
 
 iframe {
-  width: 100%;
   max-width: 100%;
   min-width: 300px;
-  min-height: 300px;
+  min-height: 210px;
   @include susy-media(mobileOnly) {
     min-width: auto;
   }

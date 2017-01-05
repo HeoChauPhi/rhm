@@ -1,11 +1,16 @@
 <div class="box-share-this">
-  {% if facebook %}
-  <a {{facebook}} class="facebook">Facebook</a>
-  {% endif %}
-  {% if twitter %}
-  <a {{twitter}} class="twitter">Twitter</a>
-  {% endif %}
+  <h2>chia sẽ</h2>
+  <ul class="social-sharethis">
+    {% if facebook %}
+    <li><a {{facebook}} class="facebook icon-facebook">Facebook</a></li>
+    {% endif %}
+
   {% if googleplus %}
-  <a {{googleplus}} class="googleplus">Google +</a>
-  {% endif %}
+    <li><a {{googleplus}} class="googleplus icon-google">Google +</a></li>
+    {% endif %}
+
+    {% if twitter %}
+      <li><a {{twitter}} class="twitter icon-twitter">Twitter</a></li>
+    {% endif %}
+  </ul>
 </div>

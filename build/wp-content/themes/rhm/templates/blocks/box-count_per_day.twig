@@ -1,9 +1,12 @@
 {# shortcode for counter perday in http://www.tomsdimension.de/wp-plugins/count-per-day#readme-arbitrary #}
 <div class="box-counter">
-  <div class="counter-total"><span>{{ shortcode('[CPD_READS_TOTAL]') }}</span></div>
   <ul class="counter-list">
-    <li class="item-total"><label>Tổng số truy cập:</label><span>{{shortcode('[CPD_READS_TOTAL]')}}</span></li>
-    <li><label>Truy cập hôm qua:</label><span>{{shortcode('[CPD_READS_YESTERDAY]')}}</span></li>
-    <li><label>Truy cập hôm nay:</label><span>{{shortcode('[CPD_READS_TODAY]')}}</span></li>
+    <li class="item-total"><label><span class="icon-users green"></span>Tổng số truy cập:</label><span>{{shortcode('[CPD_VISITORS_TOTAL]')}}</span></li>
+    <li><label><span class="icon-users orange"></span>Truy cập hôm qua:</label><span>{{shortcode('[CPD_VISITORS_YESTERDAY]')}}</span></li>
+    <li><label><span class="icon-users blue"></span>Truy cập hôm nay:</label><span>{{shortcode('[CPD_VISITORS_TODAY]')}}</span></li>
+    <li><label><span class="icon-users redline"></span>Truy cập tuần trước:</label><span>{{shortcode('[CPD_VISITORS_LAST_WEEK]')}}</span></li>
+    <li><label><span class="icon-users red"></span>Truy cập tháng trước:</label><span>{{shortcode('[CPD_VISITORS_THIS_MONTH]')}}</span></li>
+    <li><label><span class="icon-users greenline"></span>số người đang online:</label><span>{{shortcode('[CPD_VISITORS_ONLINE]')}}</span></li>
+
   </ul>
 </div>
