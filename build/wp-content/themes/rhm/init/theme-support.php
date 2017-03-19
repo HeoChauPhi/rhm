@@ -87,7 +87,7 @@ if (function_exists('register_sidebar')) {
   register_sidebar(array(
     'name' => __('Sidebar'),
     'description' => __('Description for this widget-area...'),
-    'id' => 'sidebar-1',
+    'id' => 'sidebar-block',
     'before_widget' => '<div id="%1$s" class="%2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h3>',

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="{{site.charset}}" />
-    {% if function('is_home') %}
+    {% if function('is_front_page') %}
       <title>{{site.name}} - {{site.description}}</title>
     {% elseif meta_title is defined %}
       <title>{{site.name}} - {{meta_title}}</title>
@@ -35,6 +35,8 @@
               {% endblock %}
             </div>
           </section>#}
+
+          {#<div class="sidebar">{% include "sidebar.twig" %}</div>#}
 
           <div class="main-content">
             {% block content %}
